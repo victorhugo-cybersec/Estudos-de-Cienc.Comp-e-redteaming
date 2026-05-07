@@ -1,0 +1,7 @@
+----------------1. Redes de computadores
+
+----------Qual a diferença de redes de computadores e sistemas distribuídos?
+
+-----Redes de computadores contém máquinas que podem ligar e desligar distintivamente, compartilhar arquivos e etc. Para os usuários, as máquinas são reconhecidas como únicas, e os usuários podem entrar nos computadores vizinhos e fazerem o que precisarem. Um bom exemplo são os laboratórios de uma faculdade, ou o wi-fi da sua e da minha casa.
+
+-----Sistemas distribuídos são um método de usar várias máquinas para rodar processos por meio de um único software. É usado por bancos, pela WWW, Netflix, etc.

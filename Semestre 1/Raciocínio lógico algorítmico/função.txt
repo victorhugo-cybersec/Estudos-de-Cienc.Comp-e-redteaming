@@ -49,3 +49,23 @@ console.log(soma(2,3));
 
 a variável representa o nome da função, o parênteses define os argumentos necessários para a função, e a seta indica o código dentro da função.
 
+
+Função recursiva:
+
+É possível fazer um loop numa função simples apenas retornando um valor que chame a própria função novamente.
+Aqui seria a estrutura:
+
+função (parâmetros) {
+
+    condição if que representa onde essa função vai parar {
+
+        retorna valor fixo, sem chamar a função novamente, aqui o código se encerra e nada além disso é executado
+
+    }
+
+    código que deve ser feito
+    retorna um valor com a própria função contida nele
+
+}
+
+Caso não seja feita uma condição em que cause a função a parar de chamar a si mesma, a função será infinita.
