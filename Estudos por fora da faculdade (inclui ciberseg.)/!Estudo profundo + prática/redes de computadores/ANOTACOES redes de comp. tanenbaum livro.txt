@@ -5,3 +5,15 @@
 -----Redes de computadores contém máquinas que podem ligar e desligar distintivamente, compartilhar arquivos e etc. Para os usuários, as máquinas são reconhecidas como únicas, e os usuários podem entrar nos computadores vizinhos e fazerem o que precisarem. Um bom exemplo são os laboratórios de uma faculdade, ou o wi-fi da sua e da minha casa.
 
 -----Sistemas distribuídos são um método de usar várias máquinas para rodar processos por meio de um único software. É usado por bancos, pela WWW, Netflix, etc.
+
+----------Tecnologias de transmissão são métodos utilizados para enviar dados de um ponto ao outro, no momento há dois tipos de tecnologias de transmissão, que seriam os links de difusão, e os links ponto a ponto, onde o link ponto a ponto pode ser uma conexão guiada ou não.
+
+-----Links de difusão (broadcasting) são abrangentes, ou seja, um mesmo pacote é destinado a vários destinos diferentes, isso inclui Wi-Fi, canais de rádio AM/FM e etc. Caso uma máquina receba um pacote de dados e ela não ter o IP desse pacote, essa máquina irá apenas ignorar o pacote de dados (entretanto pode ser configurada para não ignorar tais pacotes, isso se chama sniffing e é um método utilizado por hackers). Há alguns sistemas que mandam pacotes para um subconjunto das máquinas, o que é chamado de multidifusão (multicasting).
+
+-----Links de ponto a ponto é onde um pacote de dado é enviado de uma máquina para outra máquina específica. Em redes de comp. com muitas máquinas, as máquinas são utilizadas como meio de transporte de pacotes de dados em casos de ponto a ponto, a fim de aumentar a velocidade e eficiência, e claramente serão ignoradas pelo computador que recebe aquele pacote temporariamente.
+
+-----Conexões guiadas são conexões onde há uma conexão física envolvendo um cabo de fibra óptica/cobre, ou quaisquer outros métodos, e conexões não guiadas são conexões onde não há essa conexão física, onde há uma transmissão de sinais por meio de frequências e sinais a fim de geralmente abranger grandes locais, e até o mundo todo.
+
+----------Local Area Network (LANs, ou, redes locais), o que é?
+
+-----página 29.
