@@ -1,0 +1,33 @@
+---------------Multiplexadores
+
+----------O que é?
+
+-----São circuitos lógicos que permite selecionar múltiplas entradas e permite selecionar apenas uma para a saída. É usado para fazer uma transição de dados de paralelo para em série. O USB faz isso, e outros cabos também.
+
+----------Como funciona?
+
+-----É um cálculo de = 2^s = n, onde s = bits de seleção e n = entradas. Não existem multiplexadores de 3 entradas por exemplo, pois o cálculo se baseia numa potência de 2.
+
+-----Em um multiplexador de 4 entradas, haverá o S1 e o S0 que são determinados pelo multiplexador a fim de resgatar um dado em específico primeiro, no geral a tabela verdade do MUX de 4 entr. seria mais ou menos assim:
+
+S1  S0  Saída (Z)
+0   0   i0
+0   1   i1
+1   0   i2
+1   1   i3
+
+Sendo i0 a i3 a representação dos dados de cada bit.
+
+Multiplexadores são usados pela memória RAM, então vai ter horas que o i2 e o i0 serão solicitados da memória RAM, logo o multiplexador irá passar de valores ao s1 e ao s0 os números binários 10 e 00, respectivamente, a fim de resgatar tais números e retorná-los em série como saída, satisfazendo a instrução dada à memória RAM.
+
+---------------Demultiplexadores
+
+----------O que é?
+
+-----São circuitos lógicos contrários à lógica do multiplexador, onde ao invés de receber várias entradas, esses circuitos recebem apenas 1 entrada e dão várias saídas.
+
+----------Como funciona?
+
+-----É um cálculo idêntico ao do multiplexador, onde 2^s = n, sendo s = bits de seleção, e n = entradas.
+
+Demultiplexadores são usados pela memória RAM também, mas nesse caso, é usado como uma maneira da memória RAM receber dados. O demultiplexador pode transmitir dados de série para série, ou série para paralelo devido à suas saídas, pois a entrada pode ser 1 bit, e em um certo período de tempo que se passe, outro bit é passado, dando o número de forma paralela em saídas diferentes.

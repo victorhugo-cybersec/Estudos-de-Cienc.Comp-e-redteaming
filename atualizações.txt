@@ -1,2 +1,5 @@
 21/04/2026
 Conversei com o Gemini em relação às minhas anotações e agora entendi que tem matérias que não preciso anotar a documentação INTEIRA de alguma ferramenta como a MySQL, e que tem coisas mais importantes para eu focar considerando minha vontade de praticar red teaming.
+
+13/05/2026
+Esqueci de falar sobre isso, mas ignorei isso que pensei na atualização anterior. Vou continuar deixando as pastas de estudo profundo e a de consulta, mas sinto que há sim uma necessidade de ler toda a documentação, afinal, todo conhecimento é pouco e sinto que vou ser um profissional muito maior se eu fizer desse jeito que penso ser melhor para mim. Afinal, me sinto capaz disso.
