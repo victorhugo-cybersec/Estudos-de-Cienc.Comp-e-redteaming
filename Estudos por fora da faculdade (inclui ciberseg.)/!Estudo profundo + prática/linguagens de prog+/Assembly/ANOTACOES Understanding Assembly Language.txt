@@ -1,21 +1,21 @@
 ---------------- Capítulo 1
 
---------GCC = Significa GNU Compiler Collection, é um conjunto de compiladores de open-source que foi criado nos anos 80, sendo o compilador padrão de praticamente todos os distros do kernel Linux. No Linux, é utilizado para converter código em C ou C++ em um executável (.exe/.elf).
+----------GCC = Significa GNU Compiler Collection, é um conjunto de compiladores de open-source que foi criado nos anos 80, sendo o compilador padrão de praticamente todos os distros do kernel Linux. No Linux, é utilizado para converter código em C ou C++ em um executável (.exe/.elf).
 
---------AT&T (GCC AT&T) = Nos anos 70, os laboratórios da empresa de telefonia AT&T (Bell Labs) criaram o sistema operacional Unix e a linguagem C. Lá, criaram um estilo próprio de escrever código Assembly, que funcionava para os processadores Intel, e outras marcas de chips da época. Nessa sintáxe do GCC, o MOV usa a ordem MOV ORIGEM, DESTINO, registradores usam % no início, por exemplo: %eax, números hexadecimais usam $0x no início, ao acessar memória, é utilizado dessa maneira:
+----------AT&T (GCC AT&T) = Nos anos 70, os laboratórios da empresa de telefonia AT&T (Bell Labs) criaram o sistema operacional Unix e a linguagem C. Lá, criaram um estilo próprio de escrever código Assembly, que funcionava para os processadores Intel, e outras marcas de chips da época. Nessa sintáxe do GCC, o MOV usa a ordem MOV ORIGEM, DESTINO, registradores usam % no início, por exemplo: %eax, números hexadecimais usam $0x no início, ao acessar memória, é utilizado dessa maneira:
 
---Exemplo: [esp + 4] ficaria 4(%esp)
+-----Exemplo: [esp + 4] ficaria 4(%esp)
 
---------Ao criar uma função que não retorna nada, ela fica representada assim em Assembly:
+----------Ao criar uma função que não retorna nada, ela fica representada assim em Assembly:
 
---------GCC/MSVC (x86):
+----------GCC/MSVC (x86):
 
 f:
     ret 
 
 (Apenas uma instrução (ret), que retorna a execução para quem chamou a função)
 
---------ARM:
+----------ARM:
 
 f   PROC
     BX     lr
@@ -23,7 +23,7 @@ f   PROC
 
 O endereço de retorno não é salvo no stack local ao usar o ARM, ele usa Link Register (LR), que seria um registrador que armazena o endereço no qual o computador tem que voltar depois que a função acabar. Ou seja, ao usar BX lr, ele termina o processo da função e retorna ao caller.
 
---------MIPS:
+----------MIPS:
 
     j   $31
     nop
@@ -35,7 +35,7 @@ Tem dois métodos convencionais usados no MIPS quando são nomeados registradore
 
 A primeira instrução é a de pular (J ou JR) que manda o flow da execução para o caller.
 
---------Outra função simples é a que retorna um valor constante:
+----------Outra função simples é a que retorna um valor constante:
 
 int f(){
 
@@ -43,7 +43,7 @@ int f(){
 
 }
 
---------GCC/MSVC (x86):
+----------GCC/MSVC (x86):
 
 f:
     mov     eax, 123
@@ -51,7 +51,7 @@ f:
 
 A primeira instrução move o valor 123 dentro do registrador EAX, que é geralmente um registrador utilizado para armazenar valor de retorno de uma função comum, e a segunda instrução retorna execução ao caller, e o caller, obviamente, pega o resultado da função pelo registrador EAX.
 
---------ARM:
+----------ARM:
 
 f   PROC
     MOV     r0,#0x7b
@@ -60,21 +60,21 @@ f   PROC
 
 O ARM usa o registrador r0 para retornar os valores da função, assim como o EAX do GCC/MSVC, então 123 é armazenado no registrador r0. O mov, mesmo que dê a entender que seja mover, na verdade copia os dados dos quais a instrução for usada.
 
---------MIPS:
+----------MIPS:
 
-----GCC:
+-----GCC:
 
 j   $31
 li  $2,123
 
-----IDA:
+-----IDA:
 
 jr  $ra
 li  $v0, 0x7B
 
 O registrador para retorno de função do MIPS é o $2 ou $v0, e a instrução LI (Load Immediate) é equivalente ao MOV do ARM/x86. A instrução jr pula o fluxo para o caller, porém, diferentemente de outras arquiteturas, a linha após o jump sempre é executada no MIPS, por isso o número é retornado depois de jump, e isso se chama delay slot.
 
---------Agora, um código de C que apenas diz Hello World:
+----------Agora, um código de C que apenas diz Hello World:
 
 #include <stdio.h>
 
@@ -85,7 +85,7 @@ int main() {
 
 }
 
---------MSVC (x86):
+----------MSVC (x86):
 
 CONST   SEGMENT ; começo de declaração de uma constante
 
@@ -127,17 +127,17 @@ O compilador cria o arquivo l.obj, que está linkado ao l.exe. Nesse caso, o arq
 
 O C/C++ sempre termina com um zero no final da string, que é representado no código Assembly acima, onde ao definir a constante, no final há o 00H, que representa o final da string por meio de um valor nulo (o byte 00000000). O \n é representado por 0AH nesse mesmo código, e vem antes do fim da string (00H), logicamente.
 
---------call = Instrução com intuito de executar uma função, pode receber argumentos ao serem escritos instruções de push anteriormente ao call (colocando argumentos no stack frame) tem um push invisível dando o endereço de caller, e depois um jump diretamente para a primeira linha da função que foi chamada pela própria instrução call. Ao dar push em mais de um argumento em uma função que necessita de mais argumentos, é necessário dar push em uma ordem invertida. Exemplo:
+----------call = Instrução com intuito de executar uma função, pode receber argumentos ao serem escritos instruções de push anteriormente ao call (colocando argumentos no stack frame) tem um push invisível dando o endereço de caller, e depois um jump diretamente para a primeira linha da função que foi chamada pela própria instrução call. Ao dar push em mais de um argumento em uma função que necessita de mais argumentos, é necessário dar push em uma ordem invertida. Exemplo:
 
----Uma função chamada divideNums(dividendo, divisor) é criada, essa função deve ser chamada e executada com dois valores como argumento: o valor 10 que será o dividendo, e o valor 5 que será o divisor (ou seja, a ordem importa), logo, a ordem para dar push ao dar esse comando seria:
+-----Uma função chamada divideNums(dividendo, divisor) é criada, essa função deve ser chamada e executada com dois valores como argumento: o valor 10 que será o dividendo, e o valor 5 que será o divisor (ou seja, a ordem importa), logo, a ordem para dar push ao dar esse comando seria:
 
 push 5
 push 10
 call divideNums
 
----Pois ao pensar em stack frame, é necessário pensar numa literal pilha de coisas, como pratos. Ao inserir um prato primeiro e depois outro, o outro prato será o primeiro prato a ser retirado, e então, o segundo prato a ser retirado será o primeiro que você colocou naquela pilha.
+-----Pois ao pensar em stack frame, é necessário pensar numa literal pilha de coisas, como pratos. Ao inserir um prato primeiro e depois outro, o outro prato será o primeiro prato a ser retirado, e então, o segundo prato a ser retirado será o primeiro que você colocou naquela pilha.
 
---------GCC (x86)
+----------GCC (x86):
 
 main    proc near
 
@@ -155,7 +155,7 @@ var_10  = dword ptr -10h
         retn
 main    endp
 
---------AND no GCC = É um "molde" (máscara de bits) para filtrar o endereço do dado que está no registrador que estiver sendo usado. Aonde estiver 1s, o dado passa, e aonde estiver 0s, o dado é convertido em zeros. Caso haja um endereço de 12 bits: 111000110111 no registrador ESP, ao moldar esse endereço para preservar os primeiros 6 bits e descartar o resto (transformar em 0), seria feito: "and esp, 0FC0h", logo o endereço ficaria: 111000000000. Essa instrução é feita a fim de facilitar ao processador de interpretar o endereço daquele dado no registrador, o tornando um múltiplo de 4, permitindo com que ele puxe o endereço do dado em 1 ciclo de viagem.
+----------AND no GCC = É um "molde" (máscara de bits) para filtrar o endereço do dado que está no registrador que estiver sendo usado. Aonde estiver 1s, o dado passa, e aonde estiver 0s, o dado é convertido em zeros. Caso haja um endereço de 12 bits: 111000110111 no registrador ESP, ao moldar esse endereço para preservar os primeiros 6 bits e descartar o resto (transformar em 0), seria feito: "and esp, 0FC0h", logo o endereço ficaria: 111000000000. Essa instrução é feita a fim de facilitar ao processador de interpretar o endereço daquele dado no registrador, o tornando um múltiplo de 4, permitindo com que ele puxe o endereço do dado em 1 ciclo de viagem.
 
 O resultado é quase o mesmo, o endereço da string é guardado no registrador EAX, e então salvo no stack frame. Além disso, o comando AND ESP, 0FFFFFFF0h alinha o endereço do valor no registrador ESP em um limite de 16 bytes, devido à eficiência do processador com alinhamento a múltiplos de 4.
 
@@ -166,4 +166,45 @@ Na linha de MOV que vem logo após o SUB ESP, 10h, e a linha que coloca a string
 Diferentemente do MSVC, o GCC usa MOV, ao invés de XOR que é usado no MSVC, quando ambos estão sem otimização ligada.
 
 O comando leave faz automaticamente a função de retornar o ESP e o EBP para o início.
+
+----------GCC AT&T:
+
+        .file "1_1.c"
+        .section    .rodata
+.LC0:
+        .string "hello, world\n"
+        .text
+        .globl main
+        .type main, @function
+main:
+.LFB0:
+        .cfi_startproc
+        pushl   %ebp
+        .cfi_def_cfa_offset 8
+        .cfi_offset 5, -8
+        movl    %esp, %ebp
+        .cfi_def_cfa_register 5
+        andl    $-16, %esp
+        subl    $16, %esp
+        movl    $.LC0, (%esp)
+        call    printf
+        movl    $0, %eax
+        leave
+        .cfi_restore 5
+        .cfi_def_cfa 4, 4
+        ret
+        .cfi_endproc
+.LFE0:
+        .size   main, .-main
+        .ident  "GCC: (Ubuntu/Linaro 4.7.3-1ubuntu1) 4.7.3"
+        .section        .note.GNU-stack,"",@progbits
+
+Nesse código acima, é perceptível que sua sintáxe é diferente do GCC normal, onde a origem vem primeiro e o destino vem depois no momento de dar uma instrução. Além disso, é necessário colocar uma porcentagem antes de registrar nomes, e para números, um cifrão ($). No AT&T, são usados parênteses ao invés de chaves.
+
+No AT&T, também há uma outra coisa bem diferente. É necessário usar sufíxos para definir o tamanho da operação que irá ser feita:
+
+- q = quad (64 bits)
+- l = long (32 bits)
+- w - word (16 bits)
+- b - byte (8 bits)
 

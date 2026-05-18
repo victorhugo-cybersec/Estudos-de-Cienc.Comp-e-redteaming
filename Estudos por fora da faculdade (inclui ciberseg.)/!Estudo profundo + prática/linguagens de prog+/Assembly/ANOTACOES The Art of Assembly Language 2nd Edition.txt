@@ -54,3 +54,4 @@ i8, i16 e i32 são os nomes das variáveis a declararem.
 int8, int16 e int3 são os nomes dos tipos de dados para cada declaração.
 
 o símbolo := representa ao programa que você quer declarar a variável e já dar um valor inicial a ela, quais seriam os números inseridos à direita do símbolo.
+
