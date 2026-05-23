@@ -1,0 +1,37 @@
+-----Registradores:
+
+Usam de flip-flops tipo D para armazenar bits e deslocar bits.
+
+Existem vários tipos de registradores.
+
+-----Tipos de registradores:
+
+---SISO (Serial in, serial out):
+
+Os dados são dados e recebidos de 1 por 1 bit por vez, ao receber, por exemplo, os dados 11001, no SISO esses dados seriam enviados assim:
+
+1
+0
+0
+1
+1
+
+---SIPO (Serial in, parallel out):
+
+Os dados são enviados de 1 por 1, e recebidos de uma vez só, de forma paralela, por exemplo:
+
+11001 é enviado bit por bit, da direita para a esquerda;
+11001 é recebido por completo em um único pulso.
+
+---PISO (Parallel in, serial out):
+
+Os dados são enviados de uma vez só, paralelamente, e recebidos serialmente, assim:
+
+11001 é enviado em um único pulso;
+11001 é enviado bit por bit, da direita pra a esquerda.
+
+---PIPO (Parallel in, parallel out):
+
+Os dados são enviados e recebidos paralelamente, dessa forma:
+
+11001 é enviado e recebido em apenas dois pulsos, assim melhorando a velocidade do componente.

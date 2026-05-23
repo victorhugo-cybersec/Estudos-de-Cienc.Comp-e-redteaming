@@ -1,0 +1,15 @@
+-----Vetores são listas que possuem quaisquer valores dentro deles, e devem ter seu tamanho definido, anteriormente. Para se adaptar a um tamanho indefinido, é possível utilizar de loops e utilizar de um vetor vazio.
+
+-----Matrizes são vetores dentro de vetores onde: x = [[xlinha1, ylinha1], [xlinha2, ylinha2], etc]. São altamente usadas para banco de dados. Para se referir a um vetor dentro de um vetor, devemos usar exemplo[x][y].
+
+Para percorrer uma matriz com laços, é usado esse método, onde:
+
+for (int i = 0; i < x; i++){ // linhas da matriz
+
+    for (int j = 0; j < x; j++){ // colunas da matriz
+
+
+
+    }
+
+}

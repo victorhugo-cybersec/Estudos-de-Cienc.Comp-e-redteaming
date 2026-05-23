@@ -1,4 +1,4 @@
-----------------1.Conceitos teóricos:
+----------------1.Conceitos de assembly:
 
 --------Arquitetura de conjunto de instruções (ISA) = Todo CPU tem suas próprias instruções para mover dados entre registradores, trabalhar com memória, e realizar operações aritméticas primitivas.
 
