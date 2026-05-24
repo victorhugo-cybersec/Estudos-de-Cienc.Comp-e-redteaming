@@ -14,6 +14,46 @@
 
 -----Conexões guiadas são conexões onde há uma conexão física envolvendo um cabo de fibra óptica/cobre, ou quaisquer outros métodos, e conexões não guiadas são conexões onde não há essa conexão física, onde há uma transmissão de sinais por meio de frequências e sinais a fim de geralmente abranger grandes locais, e até o mundo todo.
 
+-----Unidades de arbitragem (árbitros) são mecanismos responsáveis pelo gerenciamento de acesso a recursos compartilhados dentro de uma rede de computadores.
+
 ----------Local Area Network (LANs, ou, redes locais), o que é?
 
------página 29.
+-----São redes privadas que geralmente se encontram somente em um único edifício, um campus universitário ou até mesmo uma casa (se for a do Elliot Alderson). A LAN permite uma conexão boa entre computadores na mesma região, que permite compartilhamento de dados, uso de dispositivos fora de alcance de uma sala a outra, etc. Geralmente, uma LAN é feita por meio de cabos físicos (conexão guiada) que permitem uma velocidade absurda, mili a nanossegundos de retardo, o que permite uma conexão quase que instantânea e super importante para empresas que necessitam muito de uma tecnologia responsiva.
+
+Devido à rede em cabo, há uma desvantagem onde um computador ao mandar um pacote de dados, irá ofuscar todos os outros de mandarem pacotes de dados por um tempo. Para isso, foi feito o mecanismo de arbitragem que pode ser centralizado ou distribuído. Um dos exemplos mais importantes é a Ethernet, que seria uma rede de difusão descentralizada operando a 10 megabites por segundo, nela, pacotes de dados são constantemente enviados, e se um dos pacotes esbarrar em outro, os computadores vão aguardar tempos aleatórios para enviar de novo, permitindo algo mais dinâmico.
+
+Outro sistema de difusão é o anel que utiliza como se fosse um sistema de espera, onde cada computador na rede tem sua vez de compartilhar seus dados em um certo intervalo de tempo, o que causa bits a serem enviados sem o resto de seu pacote, como um rodízio, isso é explicado mais em baixo.
+
+-----Esse "sistema de espera" que eu disse, seria o modo em que o canal da rede é alocado, onde há dois tipos de alocação: Estático e dinâmico.
+
+---Estático:
+
+O tempo é dividido em intervalos discretos, onde um algoritmo de "rodízio" é feito, e cada máquina transmite dados apenas no seu intervalo de tempo permitido, o que se torna uma faca de dois gumes quando esse intervalo não é necessário ao computador (não há dados sendo transmitidos), causando uma maior demora na rede.
+
+---Dinâmico:
+
+-Centralizado:
+
+Uma unidade de arbitragem é colocada na rede, a fim de decidir quem irá receber pacotes ou não. Porém, se esse árbitro falhar, a rede também falha por inteiro, o que seria BEM ruim se ALGUÉM atacasse diretamente ele a fim de causar um Denial of Service.
+
+-Descentralizado:
+
+Não há árbitros, as máquinas decidem por si só se suas transmissões devem acontecer.
+
+----------Redes metropolitanas, as cidades conectadas:
+
+-----Ao decorrer do tempo, as empresas de TV a cabo se aproveitaram dessa conexão para conectar a moradia do cidadão comum não somente com uma antena para transmissão da Globo ou de anúncios do tigrinho, mas para conectar as casas à internet, o que acabou criando redes metropolitanas, chamadas de MAN (Não são os únicos casos de MAN).
+
+----------Redes geograficamente distribuídas (redes que abrangem um país ou continente, em inglês, Wide Area Network (WAN)):
+
+-----Essas redes possuem hosts que seriam justamente os computadores de cidadões comuns, e esses hosts são conectados a uma sub-rede (empresa de telefonia/provedor de serviços da Internet).
+
+As sub-redes são divididas em dois componentes: Linhas de transmissão que transportam bits entre as máquinas, e elementos de comutação, que são computadores especializados, utilizados para conectar três ou mais linhas de transmissão, ao receber dados de uma linha de entrada, devem de escolher uma linha de saída desses dados e usam de algoritmos para saber o caminho mais rápido até o destino (Esse algoritmo pode ser burlado a fim de redirecionar os dados de um roteador para uma rede do atacante), os elementos de comutação tem outro nome mais familiar: Roteador. Os roteadores podem estar conectados diretamente a um host ou a mais hosts (uma LAN). Os pacotes enviados pelo host para os roteadores, são enviados a outros roteadores pelo caminho mais curto e então chegam a outros hosts.
+
+-----Sub-redes de store-and-forward (armazenamento e encaminhamento) ou comutação de pacotes são redes que utilizam dum princípio de armazenar os dados enviados por meio da linha de entrada até que a linha de saída seja liberada para os dados poderem ser encaminhados. Quando os pacotes em redes desse tipo são pequenos e de mesmo tamanho, são chamados de células, e permitem os roteadores de verem previsibilidade na rede, aumentando a eficácia dela, porém essas células podem ser enviadas com dados muito menores e mais rápidos, causando um DoS.
+
+É importante falar que, caso haja, para mais de um roteador, uma rota de roteadores mais curta do que por outras rotas, essa rota será utilizada, independentemente da necessidade de intercalar os pacotes com outros roteadores também enviando pacotes (o que em tese demoraria mais).
+
+-----Uma WAN também pode usar sistemas de satélite, que usa de antenas que permitem o envio e recebimento de pacotes de dados com outros satélites conectados a outros roteadores, porém essa conexão é não guiada e permite sniffing se os dados não forem corretamente criptografados. Tem situações em que roteadores ficam conectados a uma sub-rede ponto a ponto de grande porte, que apenas um deles terá uma antena de satélite.
+
+--------------parou na pág 33.

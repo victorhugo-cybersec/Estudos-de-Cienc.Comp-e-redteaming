@@ -18,7 +18,7 @@
 
 --------Stack frame = Possui argumentos de função, variáveis locais, e endereço de retorno para o caller. É um bloco de dados empilhado na stack sempre que uma chamada de função é feita. Exemplo:
 
----Ao chamar funcaoA(), um stack frame é criado. Se funcaoA chamar funcaoB(), um novo frame para funcaoB é empilhado sobre o da funcaoA. Quando funcaoB termina, seu frame é removido, e a funcaoA retoma de onde parou.
+----Ao chamar funcaoA(), um stack frame é criado. Se funcaoA chamar funcaoB(), um novo frame para funcaoB é empilhado sobre o da funcaoA. Quando funcaoB termina, seu frame é removido, e a funcaoA retoma de onde parou.
 
 --------Base Pointer e Stack Pointer (EBP e ESP no x86) = São circuitos físicos de silício dentro do CPU, feitos para facilitar processamento de funções. O base pointer é analogicamente um ponto 0 num eixo X, que é definido no stack frame que estiver sendo utilizado, e para se referir aos dados dentro desse stack frame, é utilizado o base pointer como ponto de referência para se referir a esses dados, onde, à sua esquerda (números negativos (endereços de memória menores)) é possível encontrar as variáveis locais da função (EBP -4 = Primeira variável local, EBP -8 = Segunda variável local, e assim vai) e à sua direita (números positivos (endereços de memória maiores)) é possível encontrar o endereço do caller, e os argumentos da função (EBP +4 = Endereço do caller, EBP +8 = Primeiro argumento, EBP +12 = Segundo argumento, e assim vai). O Stack Pointer basicamente aponta ao topo do stack, ou seja, mostra o argumento/variável local mais recente que foi criado no fluxo de processamento de instruções. (como a stack na RAM cresce de cabeça para baixo, o "topo" do stack para onde o ESP aponta é, na verdade, o endereço de memória mais baixo em uso naquele momento).
 
@@ -35,3 +35,23 @@ Para isso, é necessário notar que uma maioria das letras em ASCII ficam entre 
 --------Armazenamento de variáveis =
 
 Ao declarar uma variável em C, é colocado o valor da variável em um registrador, e então o registrador tem seu valor enviado para a stack. Por que não ir diretamente? Porque o processador não consegue fazer armazenamento direto de hexadecimais grandes, então precisa de um buffer temporário que seria justamente o registrador. 
+
+--------Tipos de registradores =
+
+----Tamanho de registradores:
+
+Registradores possuem 64 bits de tamanho, entretanto, no software é possível se referir a eles de várias formas, que irá trazer diferentes tamanhos, e podem interferir no resto dos registradores ou não.
+
+----Pedaços dos registradores:
+
+R*X = Seus bits são manipulados com posições de 0 a 63 (64 bits de tamanho). Ao escrever bits nele, o registrador todo é alterado.
+
+E*X = Seus bits são manipulados com posições de 0 a 31 (32 bits). Quando bits são escritos nele, os 32 bits finais do R*X são alterados e os 32 bits iniciais são zerados.
+
+*X = Seus bits são manipulados com posições de 0 a 15 (16 bits). Ao escrever bits nele, os 16 bits finais são alterados, porém os 16 bits iniciais do E*X são preservados.
+
+As posições dos 16 bits do *X são divididas em outros dois pedaços:
+
+*H = Vai da posição 8 até a 15 (8 bits). Se refere aos 8 primeiros bits do *X.
+
+*L = Vai da posição 0 até a 7. Se refere aos 8 últimos bits do *X. Nesse caso, o bit da posição 0 seria o último bit do registrador.
