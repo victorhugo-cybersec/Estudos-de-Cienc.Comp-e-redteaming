@@ -48,6 +48,7 @@ Para fazer a conversão de uma base para outra, é essencial que seja decorada e
 14
 15
 16
+17
 
 --------- HEXADECIMAL:
 0
@@ -234,7 +235,7 @@ Ou seja: 1100,010
 Sinal, Expoente ajustado e mantissa.
 
 -------Exemplo 1: 2,75
-prim part: 10,
+prim part: 10, (2 em binário)
 seg part:
 0,75 x 2 = 1,50
 0,50 x 2 = 1
@@ -279,16 +280,16 @@ seg part:
 11011011,1
 -37,50 em binario: 1,10110111 . 2 ^ 7
 
-127 + 4
-132
+127 + 7
+134
 
-132 | 2
-132  66
+134 | 2
+134  67
 0
 
-66 | 2
+67 | 2
 66  33
-0
+1
 
 33 | 2
 32  16
@@ -313,6 +314,6 @@ seg part:
 1 | 2
 1  x
 
-expoente ajustado: 10000100
+expoente ajustado: 10000110
 
 mantissa: 10110111 (a mesma coisa do que vem depois da vírgula)

@@ -34,4 +34,4 @@ Os dados são enviados de uma vez só, paralelamente, e recebidos serialmente, a
 
 Os dados são enviados e recebidos paralelamente, dessa forma:
 
-11001 é enviado e recebido em apenas dois pulsos, assim melhorando a velocidade do componente.
+11001 é enviado e recebido em apenas um pulso, assim melhorando a velocidade do componente.
