@@ -1,0 +1,24 @@
+--------------------Definições de conceitos de Sistemas Operacionais (SOs).
+
+---------------Camadas do computador
+
+----------Há as duas camadas principais quais nelas são englobadas outras camadas, a camada de hardware e a camada de software.
+
+-----Na camada de software, há dois modos, o núcleo (kernel) e o de usuário:
+
+No modo usuário, há o programa de interface com o usuário que seria, por exemplo, o visual do Windows, onde há uma barra de tarefas no canto inferior, uma área de trabalho, programas e pastas que podem ser criados nessa área de trabalho, e algumas outras características próprias do Windows. Além disso, no modo usuário também há os programas que são usados no dia a dia pelo usuário, um reprodutor de músicas, um navegador web, etc.
+
+No modo núcleo, há o sistema operacional, que tem controle total do computador e pode executar quaisquer instruções que o computador seja capaz de executar.
+
+Haverão aplicações do núcleo que irão interferir na camada de usuário, e vice-versa, dependendo das necessidades das aplicações/programas num todo.
+
+-----Na camada de hardware, ficam coisas como a fonte, o processador, a memória RAM, disco rígido, uma placa de vídeo, etc.
+
+----------O kernel dos sistema operacionais, como o Linux e o Windows, possuem acima de 5 milhões de linhas de código, e isso se refere ao código bruto dos kerneis, pois quando se trata de bibliotecas essenciais num todo, o Windows, por exemplo, acabada tendo bem mais de 70 milhões de linhas de código (sem incluir softwares pré-instalados).
+
+---------------O que é um sistema operacional?
+
+----------É uma estrutura de software feita para simplificar a arquitetura bruta dos computadores (Assembly, consoles, etc), a fim de facilitar o uso cotidiano para pessoas comuns e pessoas que trabalham com programação. Por exemplo, antes de drivers para discos, os discos rígidos vinham com manuais de +400 páginas, hoje em dia são fáceis de serem utilizados. Retornando aos sistemas operacionais, discos rígidos não foram os únicos que receberam drivers, quaisquer dispositivos de entrada/saída (impressoras, por exemplo) necessitam de drivers, e esses drivers numa maioria já estão nos sistemas operacionais a fim de, novamente, facilitar a vida do usuário. Os discos rígidos, mesmo com drivers, necessitam de mais abstração, a fim de facilitar os criadores de aplicativos, para isso, os sistemas operacionais criam os arquivos, e gerenciadores de arquivos, facilitando a criação, escrita e leitura de arquivos.
+
+
+-----PAROU PÁGINA 23.

@@ -48,4 +48,4 @@ Usado para dar um uso a quando set e reset forem iguais a 1. Também possuí PRE
 
 -----Flip-flop D:
 
-Usado para armazenar 1 bit de informação. A entrada D que recebe irá aparecer na saída de clock em clock. Se não houver clock, o flip-flop D irá continuar com a entrada anterior armazenada.
+Usado para armazenar 1 bit de informação. A entrada D que recebe irá aparecer na saída de clock em clock. Se não houver clock, o flip-flop D irá continuar com a entrada anterior armazenada. Os flip-flops num geral também guardam 1 bit de informação, mas a simplicidade do flip-flop D faz dele ser insubstituível até na tecnologia de hoje.
