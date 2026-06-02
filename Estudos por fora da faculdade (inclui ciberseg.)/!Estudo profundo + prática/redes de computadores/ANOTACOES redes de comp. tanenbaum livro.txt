@@ -56,4 +56,20 @@ As sub-redes são divididas em dois componentes: Linhas de transmissão que tran
 
 -----Uma WAN também pode usar sistemas de satélite, que usa de antenas que permitem o envio e recebimento de pacotes de dados com outros satélites conectados a outros roteadores, porém essa conexão é não guiada e permite sniffing se os dados não forem corretamente criptografados. Tem situações em que roteadores ficam conectados a uma sub-rede ponto a ponto de grande porte, que apenas um deles terá uma antena de satélite.
 
---------------parou na pág 33.
+----------Redes sem fios, como são?
+
+-----Há três tipos de redes sem fios:
+
+---Interconexão de sistemas;
+
+É a interconexão de componentes de um computador com um rádio de alcance limitado. Componentes conectáveis via bluetooth são um exemplo de interconexão de sistemas.
+
+---LANs sem fios;
+
+É como se fosse a interconexão de componentes bluetooth para um computador, mas ao invés disso, é uma conexão de vários computadores por meio de rádio e antena que permite a comunicação entre os computadores.
+
+---WANs sem fios.
+
+Uma rede de rádio usada para telefonia celular é um exemplo de sistema sem fio de baixa largura de banda. São redes parecidas com as de LANs sem fios, porém com uma longitude de quilômetros, e com taxas de bits muito menores.
+
+O serviço de distribuição local multiponto se refere a uma tecnologia que ainda está sendo desenvolvida, que envolve a criação de redes sem fios geograficamente distribuídas de alta largura de banda, possibilitando o acesso à internet de alta velocidade sem a utilização do sistema de telefonia.

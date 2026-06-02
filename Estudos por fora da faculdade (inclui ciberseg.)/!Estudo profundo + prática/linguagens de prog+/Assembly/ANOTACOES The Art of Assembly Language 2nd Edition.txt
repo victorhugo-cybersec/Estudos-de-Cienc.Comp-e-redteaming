@@ -1,23 +1,25 @@
------------------------------------- A anatomia do High-level Assembly (HLA):
+--------------- Cap.1: A anatomia do High-level Assembly (HLA):
+
 program pgmID;
-    Declarações
+    Declarações;
 begin pgmID;
     Argumentos;
 end pgmID;
 
-pgmID = Program ID, especifica o nome do programa, todos devem usar o mesmo nome.
+----- pgmID = Program ID, especifica o nome do programa, todos devem usar o mesmo nome.
 
-Declarações = Aonde são declaradas constantes, tipos, variáveis, procedimentos/funções e outros objetos no HLA.
+----- Declarações = Aonde são declaradas constantes, tipos, variáveis, procedimentos/funções e outros objetos no HLA.
 
-Argumentos = A seção em que você coloca os seus argumentos executáveis para o seu programa principal.
+----- Argumentos = A seção em que você coloca os seus argumentos executáveis para o seu programa principal.
 
-program, begin e end são palavras reservadas para esboçar o programa.
+----- program, begin e end são palavras reservadas para esboçar o programa.
 
-O pgmID deve ter um nome que seja apropriado para o programa, e deve usar de regras usadas em nomes de variáveis de linguagens de alto nível.
+----- O pgmID deve ter um nome que seja apropriado para o programa, e deve usar de regras usadas em nomes de variáveis de linguagens de alto nível.
 
------------------- Um exemplo de programa muito usado para estudar é o helloWorld:
+---------- Um exemplo de programa muito usado para estudar é o helloWorld:
 
 program helloWorld;
+
 #include("stdlib.hhf");
 
 begin helloWorld;
@@ -34,11 +36,11 @@ nl (new line) = quebra de linha, também derivado do .hhf, é uma constante de t
 
 ; = sintaxe da linguagem HLA.
 
-O HLA pode automaticamente concatenar duas strings, ao serem declaras dentro de stdout.put por exemplo. A new line por ser uma string pode ser utilizada sem a vírgula, porém ela é uma das unicas exceções. É recomendado sempre usar a vírgula para separar os dados, considerando a existência de outros tipos de variáveis.
+O HLA pode automaticamente concatenar duas strings, ao serem declaras dentro de stdout.put por exemplo. A new line por ser uma string pode ser utilizada sem a vírgula, porém ela é uma das unicas exceções. É recomendado sempre usar a vírgula para separar os dados, considerando a existência de outros tipos de variáveis que podem confundir o programador em usar vírgula.
 
 Um arquivo HLA deve ser rodado por consoles, ou seja, pelo shell ou um prompt de comando do Windows.
 
------------------------------------- Declaração de variáveis
+--------------- Declaração de variáveis
 
 O HLA tem vários tipos de inteiros, como o int8, int16 e o int32, que correspondem a 1 byte, 2 bytes e 4 bytes, respectivamente. Declarações de variáveis típicas ocorrem na seção de variáveis estáticas do HLA (static variable section):
 
@@ -55,3 +57,31 @@ int8, int16 e int3 são os nomes dos tipos de dados para cada declaração.
 
 o símbolo := representa ao programa que você quer declarar a variável e já dar um valor inicial a ela, quais seriam os números inseridos à direita do símbolo.
 
+Também é possível usar booleanos no HLA.
+
+---------------Cap.1.6: Uma introdução à família da CPU Intel 80x86:
+
+----------Classificação do CPU Intel:
+
+A família da CPU da Intel é classificada como uma máquina de arquitetura Von Neumann, que possuí três blocos de construçao principais: A unidade de processamento (CPU), memória, e dispositivos Input/Output (I/O). Os três componentes são interconectados utilizando de barramentos do sistema (barramentos de endereço, informação e controle) (barramentos são as conexões entre os componentes de um computador que o fazem funcionar como um só).
+
+O CPU se comunica com a memória e com os dispositivios I/O, colocando valores numéricos no barramento de endereço para selecionar um dos locais de endereço, ou um dos locais do dispositivo I/O, cada um tem um endereço numérico binário único. Para se comunicarem, a CPU, a memória e os dispositivos I/O passam informações entre si por meio dos barramentos de dados, os barramentos de controle passam sinais que determinam a direção da transferência dos dados (de quem para onde).
+
+----------Registradores de CPU 80x86:
+
+-----Os registradores 80x86 podem ser divididos em 4 categorias:
+
+Registradores de uso geral;
+Registradores de propósito específico acessíveis pela aplicação;
+Registradores de segmento;
+Registradores de propósito específico acessíveis pelo modo núcleo;
+
+(Para referência, veja as anotações:
+
+estudo faculdade/Estudos por fora da faculdade (inclui ciberseg.)/!Estudo profundo + prática/linguagens de prog+/Assembly/ANOTACOES Understanding Assembly Language.txt
+
+estudo faculdade/Estudos por fora da faculdade (inclui ciberseg.)/!Estudo profundo + prática/sistemas operacionais/conceitos de sistemas op/ANOTACOES Sistemas Operacionais Modernos.txt)
+
+As CPUs 80x86 possuem vários registradores de uso geral para uso de aplicação, como os registradores de 32 bits (de início "E" (Extended)) que são os EAX, EBX, ECX, EDX, ESI, EDI, EBP e ESP.
+
+-----parou pag. 9.

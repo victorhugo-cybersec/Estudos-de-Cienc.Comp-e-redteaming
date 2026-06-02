@@ -1,0 +1,8 @@
+1 - Os latches possuem assíncronidade, onde não há uma sincronia entre eles e outros componentes, ou entre eles e eles mesmos, enquanto o flip-flop possui uma porta de clock, que o permite ser sincronizado e até mesmo ter seu processo acelerado, além de permitir um armazenamento  de dados melhor.
+
+2 - No S2, S1 e S0, devem ser conectados as variáveis A, B e C respectivamente. I0, I2, I5 e i7 devem ser conectados ao GND, e I1, I3, I4 e I6 devem ser conectados ao VCC.
+
+3 - a) Pois com o fato de que todos os dígitos tem de alterar seus valores, e o clock desse contador ser desse tamanho, o contador pode temporariamente assumir números errados.
+b) Pois se o tempo de saída da borda do clock aumentar, é mais fácil do contador ter erros.
+
+4 - 

@@ -54,4 +54,4 @@ As posições dos 16 bits do *X são divididas em outros dois pedaços:
 
 *H = Vai da posição 8 até a 15 (8 bits). Se refere aos 8 primeiros bits do *X.
 
-*L = Vai da posição 0 até a 7. Se refere aos 8 últimos bits do *X. Nesse caso, o bit da posição 0 seria o último bit do registrador.
+*L = Vai da posição 0 até a 7. Se refere aos 8 últimos bits do *X. Nesse caso, o bit da posição 0 seria o primeiro bit do registrador.
