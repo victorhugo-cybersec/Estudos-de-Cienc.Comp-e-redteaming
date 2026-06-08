@@ -20,5 +20,20 @@ Haverão aplicações do núcleo que irão interferir na camada de usuário, e v
 
 ----------É uma estrutura de software feita para simplificar a arquitetura bruta dos computadores (Assembly, consoles, etc), a fim de facilitar o uso cotidiano para pessoas comuns e pessoas que trabalham com programação. Por exemplo, antes de drivers para discos, os discos rígidos vinham com manuais de +400 páginas, hoje em dia são fáceis de serem utilizados. Retornando aos sistemas operacionais, discos rígidos não foram os únicos que receberam drivers, quaisquer dispositivos de entrada/saída (impressoras, por exemplo) necessitam de drivers, e esses drivers numa maioria já estão nos sistemas operacionais a fim de, novamente, facilitar a vida do usuário. Os discos rígidos, mesmo com drivers, necessitam de mais abstração, a fim de facilitar os criadores de aplicativos, para isso, os sistemas operacionais criam os arquivos, e gerenciadores de arquivos, facilitando a criação, escrita e leitura de arquivos.
 
+---------------O sistema operacional como gerenciador de recursos:
 
------PAROU PÁGINA 23.
+----------Há dois conceitos chamados de top-down e de bottom-up, onde o top-down se refere à visão de cima para baixo, e de bottom-up, baixo para cima. Um sistema operacional que fornece abstrações para a criação de aplicações é uma visão top-down, enquanto a visão bottom-up se refere à existência do sistema operacional como uma forma de gerenciar todas as partes de um sistema complexo que seria o computador num todo. Ele administra quais processos serão executados primeiro, quais tem maior prioridade, como serão executados, por quem, quando e como.
+
+----------No gerenciamento, o sistema operacional pode fazer a multiplexação (compartilhamento) de recursos de duas formas:
+
+-----Multiplexação de tempo: Os programas utilizam o recurso de forma revezada. Todo processo que necessita daquele recurso, irá utilizá-lo por tempo suficiente, e então passa para o próximo, com uma rotina semelhante ao de round-robin em redes de computadores, onde cada computador tem um tempo para transmitir seus pacotes de dados, e então depois desse determinado tempo, a vez é passada para o outro computador.
+
+-----Multiplexação de espaço: Os programas, ao invés de revezar, utilizam uma parte do recurso e dividem essas partes entre si a fim de conseguir executar vários processos de maneira simultânea. Isso se aplica à memória e ao disco rígido.
+
+---------------Um pouco de história da computação:
+
+----------Multiprogramação: Ao decorrer da história, a multiprogramação foi criada para fazer a CPU trabalhar quase que 100% do tempo, considerando que antes, ela se mantia ociosa, o que, por ser cara, a tornava um desperdício de dinheiro para investidores. A multiprogramação consiste em dividir a memória em várias partes, com uma tarefa diferente em cada partição.
+
+----------Timesharing: É uma variante da multiprogramação. Cada usuário tem acesso a um terminal on-line, e quem não estivesse utilizando do terminal aquele momento, a CPU poderia redirecionar seus processos para os terminais que estavam sim sendo utilizados.
+
+----- parou na página 32.

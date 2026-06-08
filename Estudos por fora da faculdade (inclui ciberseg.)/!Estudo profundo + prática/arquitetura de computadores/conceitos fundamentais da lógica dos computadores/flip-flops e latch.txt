@@ -19,10 +19,10 @@ Esses intervalos de tempo das bordas são chamados de Rise Time e Fall Time, res
 (Latch de portas NAND)
 
 set reset   saída
-1   1       não muda
-0   1       q = 1
-1   0       q = 0
-0   0       inválida*
+0   0       não muda
+1   0       q = 1
+0   1       q = 0
+1   1       inválida*
 
 *produz q = nao q = 1
 
