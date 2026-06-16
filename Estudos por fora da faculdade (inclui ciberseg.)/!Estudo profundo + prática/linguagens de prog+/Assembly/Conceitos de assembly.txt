@@ -55,3 +55,5 @@ As posições dos 16 bits do *X são divididas em outros dois pedaços:
 *H = Vai da posição 8 até a 15 (8 bits). Se refere aos 8 primeiros bits do *X.
 
 *L = Vai da posição 0 até a 7. Se refere aos 8 últimos bits do *X. Nesse caso, o bit da posição 0 seria o primeiro bit do registrador.
+
+Os registradores ESI, EDI, EBP e ESP são independentes dos registradores de final X. Eles são compostos por apenas 2 partes: E*I / E*P, e a parte menor, *I / *P. A parte maior se refere aos 32 bits num todo, e a menor, aos 16 bits. Os registradores *I / *P se referem aos bits 0 à 15 do registrador, enquanto os E*I / E*P se referem do 0 aos 31 bits do registrador. É importante notar que ao escrever bits no *I / *P, o resto dos dados do registrador todo não é zerado, os bits que estão do 16 ao 31 ainda estarão lá.

@@ -76,12 +76,40 @@ Registradores de propósito específico acessíveis pela aplicação;
 Registradores de segmento;
 Registradores de propósito específico acessíveis pelo modo núcleo;
 
-(Para referência, veja as anotações:
-
-estudo faculdade/Estudos por fora da faculdade (inclui ciberseg.)/!Estudo profundo + prática/linguagens de prog+/Assembly/ANOTACOES Understanding Assembly Language.txt
-
-estudo faculdade/Estudos por fora da faculdade (inclui ciberseg.)/!Estudo profundo + prática/sistemas operacionais/conceitos de sistemas op/ANOTACOES Sistemas Operacionais Modernos.txt)
+(Para referência, veja as anotações na linha 39, endereço: estudo faculdade/Estudos por fora da faculdade (inclui ciberseg.)/!Estudo profundo + prática/linguagens de prog+/Assembly/ANOTACOES Understanding Assembly Language.txt)
 
 As CPUs 80x86 possuem vários registradores de uso geral para uso de aplicação, como os registradores de 32 bits (de início "E" (Extended)) que são os EAX, EBX, ECX, EDX, ESI, EDI, EBP e ESP.
 
------parou pag. 9.
+O registrador EFLAGS é um registrador de 32 bits em que cada bit guarda um booleano que diz sobre o estado atual do CPU:
+
+Bit 0 = Carry;
+Bit 2 = Parity;
+Bit 4 = Auxiliary Carry;
+Bit 6 = Zero;
+Bit 7 = Sign;
+Bit 9 = Interrupt Disable;
+Bit 10 = Direction;
+Bit 11 = Overflow;
+
+Acima são a parte de 0 a 15 bits do registrador FLAGS (Faz parte do EFLAGS), e nele, destaquei os bits importantes, enquanto os outros são numa maioria ignorados pelos programadores.
+
+O código de condição, assim como iremos chamar, são as flags overflow, carry, sign e zero. Por exemplo, ao comparar dois valores, as flags do código de condição podem nos dizer qual valor é maior, menor ou igual ao outro.
+
+Quase todas as operações na CPU de 80x86 usam de registradores. Por exemplo:
+
+int main(){
+
+    int a = 2, b = 3;
+    int c;
+
+    c = a + b;
+
+    return 0;
+
+}
+
+É necessário carregar uma das variáveis no registrador, adicionar a segunda variável para o valor no registrador, e então guardar o registrador na variável de destino (a terceira variável).
+
+Para concluir essa seção, é importante notar que, mesmo que os registradores sejam "de uso geral", você não pode usar qualquer registrador para qualquer coisa, afinal, cada registrador tem um propósito e é mais utilizado em certos casos específicos, siga o uso apropriado de cada registrador a fim de ter um código Assembly limpo.
+
+----parou na pág. 10.
