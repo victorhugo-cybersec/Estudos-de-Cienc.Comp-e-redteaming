@@ -1,0 +1,35 @@
+------------------------------------------- linux: conceitos base utilizados no linux.
+
+--------------------- flags = flags começam com um hífen, e então a palavra/letra da flag, é sempre citado após o comando no qual ela é utilizada, cada comando tem suas flags específicas, e cada uma delas vão ter funções diferentes para o comando, em alguns comandos, uma flag é necessária, em outras, é uma maneira de apenas filtrar, ou até mesmo restringir, dar permissão, e etc. Dois comandos diferentes podem ter o mesmo nome de uma flag, mas essas flags vão ter usos diferentes e não podem ser confundidas (Ex: touch -r, e ls -r).
+
+--------------------- wildcards = São usados geralmente para filtrar ou se referir à uma variedade de arquivos, diretórios, entre outros. São essenciais para a vida de alguém que vá mexer com linux no emprego. Os wildcards são esses:
+
+---------- ? = Se refere a todos os caracteres em 1 unidade.
+
+----- Exemplo: arquivo?, vai achar arquivo1, arquivo2, arquivo3, mas não vai achar arquivo10 ou arquivo11
+
+---------- * = Usado para se referir a qualquer e qualquer quantidade de caracteres, até mesmo nenhum caractere.
+
+----- Exemplo: ao pesquisar por *.txt, você vai ter como retorno todos, literalmente todos os arquivos de formato .txt no lugar em que você estiver pesquisando.
+
+---------- [] = Especifica o que você quer procurar, é bom para pesquisar arquivos numerados, pesquisar em ordem alfabética, etc.
+
+----- Exemplo: Você quer pesquisar pelos arquivos file2, file3 e file4, para isso, você pode usar o parâmetro file[2-4], ou então file[234] que é maior. Também é possível fazer file[2-48-9] por exemplo.
+
+---------- [!] = É a forma de mostrar ao shell o que você NÃO quer que apareça, com o mesmo estilo dos braquetes.
+
+----- Exemplo: Ao pesquisar por arquivos, você não deseja ver do arquivo 9 porque você já o olhou anteriormente. Ao pesquisar por esses arquivos, você pode usar file[!9]
+
+--------------------- Piping (|) = O caractere | é usado para juntar comandos. Mas em que sentido? Ao escrever um comando e colocar | logo após, e então escrever outro comando, o segundo comando irá obter o primeiro como um input, dando então um output.
+
+--------------------- Operadores Shell = São operadores que são utilizados para mexer com inputs e outputs num geral. Aqui são alguns dos operadores:
+
+---------- Operador & = Esse operador permite executar comandos de fundo, já que, ao instalar algo usando sudo apt install *etc* por exemplo, você se torna incapaz de executar qualquer ação até que aquela ação seja feita. Esse operador impede isso.
+
+---------- Operador && = Pode juntar dois comandos ou mais. É importante notar que o próximo comando só será executado caso o primeiro não apresente erros.
+
+---------- Operador > = Conhecido como um redirecionador de output. Significa que o output é pego de um comando que executamos e então, enviado para outro lugar. Por exemplo, ao executar um comando como "echo hey > welcome", o output do comando será redirecionado para algum arquivo existente de nome welcome, e irá sobrescrever todo o conteúdo do arquivo. Caso o arquivo não exista, ele é criado.
+
+---------- Operador >> = O mesmo conceito do operador >, mas ao invés de sobrescrever dados em arquivos já existentes, ele coloca os dados ao final do arquivo destino qual referenciado. Logo, no comando "echo hello >> welcome", se já houver um arquivo chamado welcome com conteúdo "hey", após esse comando, o arquivo terá o conteúdo de:
+"hey
+hello"
