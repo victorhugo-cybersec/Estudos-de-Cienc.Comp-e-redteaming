@@ -2,3 +2,10 @@ Operador ternário é uma maneira de facilitar condições de if/else, aqui há 
 
 let nota = 3;
 let msg = nota >= 6 ? "Aprovado" : "Reprovado";
+
+Após o ponto de interrogação, é inserido o valor caso a condição "nota >= 6" for verdadeira, caso falsa, será retornado o valor após os dois pontos (:). É possível fazer operadores ternários dentro de operadores ternários utilizando de parênteses:
+
+let nota = 3;
+let trabalhosExtras = 5;
+
+let msg = nota >= 6 ? "Aprovado" : (trabalhosExtras >= 2 ? "Aprovado" : "Reprovado");

@@ -1,5 +1,4 @@
-
-Essa anotação também vale para o diretório "/Estudos por fora da faculdade (inclui ciberseg.)/prog. competitiva"
+Essa anotação também vale para o diretório "/Estudos por fora da faculdade (inclui ciberseg.)/!Estudo profundo + prática/prog. competitiva"
 
 
 ------------------ Ao trocar variáveis, há vários métodos possíveis. Aqui são alguns métodos possíveis no JavaScript:

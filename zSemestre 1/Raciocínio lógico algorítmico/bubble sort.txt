@@ -1,3 +1,3 @@
 -----O que é bubble sort?
 
-É um algoritmo de ordenação, onde ele percorre uma lista, e nela, são comparados o primeiro elemento com o elemento da frente, os trocando se estiverem na ordem certa.
+É um algoritmo de ordenação, onde ele percorre uma lista, e nela, são comparados o primeiro elemento com o elemento da frente, os trocando se estiverem na ordem certa. Basta um loop, uma variável auxílio e uma variável que represente o array que deve ser organizado.
