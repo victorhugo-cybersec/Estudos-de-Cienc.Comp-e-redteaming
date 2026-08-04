@@ -1,0 +1,10 @@
+--------------------- objdump = permite desestruturar um .exe em código assembly.
+
+Exemplo: objdump -M intel -d nome_do_executavel
+
+A flag -M dirá que logo em seguida será citada uma configuração do desestruturador, que geralmente é a variação de assembly preferida, como intel, x86, AT&T, etc.
+
+A flag -d vai desestruturar apenas seções em que é esperado que hajam instruções que possam ser convertidas em Assembly.
+
+Também é possível usar essa linha para remover as linhas de metadados (call frame information) e deixar o assembly mais compreensível:
+gcc -S -masm=intel -fno-asynchronous-unwind-tables teste.c

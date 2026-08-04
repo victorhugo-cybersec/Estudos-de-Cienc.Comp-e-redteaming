@@ -1,0 +1,11 @@
+----------Classes -> Objetos
+
+-----Objetos:
+
+Características: 
+Atributos -> Variáveis
+
+Comportamentos: 
+Métodos -> Funções
+
+POO é fundamental para estrutura de dados, é um dos pilares mais importantes do segundo semestre.

@@ -1,7 +1,7 @@
 --------------------------------------------- INCOMPLETO!!!!!!!!!!!!!!!!
 
 1 - 1 Quantidades digitais e analógicas
-Circúitos eletrônicos podem ser divididos em duas categorias, digital e analógico.
+Circuitos eletrônicos podem ser divididos em duas categorias, digital e analógico.
 Enquanto os circúitos analógicos são contínuos e assumem qualquer valor, os digitais assumem valores discretos que são o 0 e o 1.
 Exemplo de circúitos analógicos: rádio FM, sensores de temperatura, fontes de alimentação (É possível analisar que todos podem sofrer interferências.)
 Exemplo de circúitos digitais: qualquer computador (É altamente resistente à ruídos, com alta precisão e capacidade de armazenamento.)

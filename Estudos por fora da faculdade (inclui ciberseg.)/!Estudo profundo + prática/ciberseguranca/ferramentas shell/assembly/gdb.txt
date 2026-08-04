@@ -1,0 +1,53 @@
+--------------------- gdb =
+
+Para compilar o arquivo em C para código de máquina com gcc, é usado a flag de debug -g, a linha de código ficaria algo mais ou menos assim:
+
+gcc -g teste.c -o teste
+
+e então, podemos abrir o gdb, que é um compilador de código de máquina para assembly:
+
+gdb ./soma
+
+O gdb é utilizado dessa seguinte maneira:
+
+----------- layout next =
+
+Um dos comandos principais do gdb, ele abre uma interface visual que mostra o código e os registradores, simultaneamente.
+
+----------- tui reg general =
+
+Mostra o valor dos registradores em tempo real.
+
+----------- break main =
+
+Pode ser apreviado como b main, ele marca onde o programa deve parar, à fim de você poder começar a analisar.
+
+----------- run = 
+
+Pode ser abreviado com r, ele começa a execução do programa até o primeiro break.
+
+----------- stepi =
+
+Pode ser abreviado com si, ele avança 1 instrução de assembly.
+
+----------- next =
+
+Pode ser abreviado com n, ele avança 1 linha de código C, então pula muitas instruções Assembly.
+
+----------- info registers = (abreviado como i r) mostra o valor atual de todos os registradores.
+
+----------- print x =
+
+Pode ser abreviado com x, mostra o valor da variável x do seu código. (Me refiro a X como uma incógnita)
+
+----------- x/gx $rsp =
+
+Examina a memória na stack.
+
+----------- layout asm =
+
+Usado para dar uma recarregada nas telas, é útil para quando você se perder nos infinitos add %al,(%rax) que aparecem na tela ao usar layout next.
+
+----------- quit =
+
+Faz o que você acha, sai do GDB (Pode ser abreviado com q).

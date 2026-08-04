@@ -14,7 +14,7 @@
 
 -----Conexões guiadas são conexões onde há uma conexão física envolvendo um cabo de fibra óptica/cobre, ou quaisquer outros métodos, e conexões não guiadas são conexões onde não há essa conexão física, onde há uma transmissão de sinais por meio de frequências e sinais a fim de geralmente abranger grandes locais, e até o mundo todo.
 
------Unidades de arbitragem (árbitros) são mecanismos responsáveis pelo gerenciamento de acesso a recursos compartilhados dentro de uma rede de computadores.
+-----Unidades de arbitragem (árbitros) são mecanismos responsáveis pelo gerenciamento de acesso a recursos compartilhados dentro de uma rede de computadores. São etapas de segurança para a transmissão de dados.
 
 ----------Local Area Network (LANs, ou, redes locais), o que é?
 

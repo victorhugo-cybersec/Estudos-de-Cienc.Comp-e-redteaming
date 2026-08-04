@@ -1,0 +1,7 @@
+--------------------- nvim =
+
+O neovim é um editor de texto, que tem comandos para salvar e sair, e não salvar e sair do código, assim como somente salvar e continuar digitando. Ele não deve ser usado com a seta > assim como o comando cat, pois sua estrutura é assim: "nvim teste.c".
+
+Ao criar um arquivo ou editar um arquivo já existente, você pode começar a programar clicando a letra i que significa INSERT, que será o que vai aparecer em baixo. Logo após terminar de programar no arquivo, você pode clicar Esc e então clicar no botão : (Shift + ;), e então escrever w de write (salva o conteúdo) e q de quit (para sair da edição), e logo depois, um enter.
+
+Você pode fazer junções dessas letras e usar elas individualmente também. Caso você tenha medo da energia cair e você perder seu progresso, você pode colocar apenas :w, e não sair do código, ou então se você quer sair sem salvar, pode usar :q!, e então um enter.
