@@ -1,0 +1,43 @@
+---------------Fundamentos de hardware e software
+
+----------Hardware:
+
+Parte física de um sistema computacional. Engloba CPU, fonte, processador, memória RAM, etc.
+
+----------Software:
+
+Parte lógica de um sistema computacional. Engloba sistemas operacionais, serviços, drivers, e o funcionamento da máquina num todo, apenas utilizando de código binário, que é traduzido para facilitar manutenção e criação manual de código por parte do ser humano.
+
+-----Software básico:
+
+Se refere a sistemas operacionais, são a base do funcionamento de software do computador, por isso são referidos como "básicos".
+
+-----Softwares aplicativos:
+
+Se refere a executáveis que possuem diversas funções e são acessíveis pelo usuário e feitos para o usuário, ou até mesmo para manutenção por parte de especializados.
+
+Firmwares:
+
+São softwares instalados diretamente no hardware, como BIOS. Quase todos os hardwares instalados num computador possuem seus próprios microcódigos a fim de torná-los funcionáveis e compatíveis com a placa mãe.
+
+---------------Peças de hardware principais do computador
+
+----------Memória RAM (Random Access Memory)
+
+É a memória primária, onde os softwares são carregados para serem executados pela CPU. A memória RAM é volátil, ou seja, ao perder energia, perde os seus dados.
+
+----------Memória ROM (Read Only Memory)
+
+É uma memória não volátil que só pode ser lida, pois foi gravada em fábrica, e é onde há código que verifica se os hardwares essenciais estão presentes no sistema (POST = Power-on Self-test). Essa memória também possuí o BIOS gravada nela.
+
+----------Memória CMOS 
+
+Uma memória alimentada pela bateria CMOS que tem a intenção de armazenar configurações da BIOS. Quando sua bateria começa a descarregar, o sistema operacional não é enxergado e então não é inicializado.
+
+----------Memória Cache
+
+É uma memória volátil que é embutida no chip do processador, devido a isso, o acesso é mais rápido e eficiente. A memória possuí layers: L1, L2, L3.
+
+----------Memórias de massa
+
+São as memórias não voláteis mais conhecidas, como SSD, HD, Pendrive, etc. Possuem maior capacidade de armazenamento, mas são as memórias de acesso mais lento.
