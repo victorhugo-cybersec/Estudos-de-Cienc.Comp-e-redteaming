@@ -99,3 +99,37 @@ Para cada par de camadas adjacentes (camada N de uma máquina e camada N de outr
 Um conjunto de camadas e protocolos é chamado de arquitetura de redes. Tudo na arquitetura deve ter informações o suficiente para permitir um implementador a desenvolver programas ou construir o hardware de cada camada.
 
 Uma lista de protocolos usados por um determinado sistema é chamada pilha de protocolos.
+
+----------Questões de projeto relacionadas às camadas: Problemas comuns e soluções
+
+-----No livro, são citadas observações em relação à arquiteturas de redes, onde o autor cita a necessidade de controle de erros (onde é necessário um meio para o receptor falar ao transmissor que a mensagem chegou sem erros ou não), quantidade de canais lógicos na conexão (a fim de compreender a arquitetura, possibilitando a sua manutenção e manipulação mais fácil), e o endereçamento para transmissores e receptores, considerando que em certas arquiteturas, haverão muitos.
+
+-----Também há um problema em relação a receptores lentos e transmissores rápidos, dependendo do caso, o receptor pode ser sobrecarregado com informações, e isso possuí algumas resoluções:
+
+- Feedback do receptor para o transmissor em relação à situação atual do receptor;
+- Limitar o transmissor a uma velocidade de transmissão pré-determinada, assim como um computador faria com o clock conectado a um hardware antigo: isso é chamado de controle de fluxo.
+
+-----Mensagens muito longas também tem dificuldades de serem aceitas em processos de uma arquitetura, mandar a mensagem fragmentada é ineficiente, logo a solução seria enviar a mensagem longa para o receptor, e o receptor por contra própria fragmentará a mensagem. Também existe o processo de roteamento, que significa a decisão de um caminho entre a origem e o destino, considerando a existência de vários caminhos.
+
+----------Serviços orientados a conexões e serviços sem conexões
+
+-----Serviço orientado a conexões.
+
+Temos o fluxo de mensagens confiável, onde o usuário estabelece uma conexão que então é utilizada, depois liberada. Na maioria dos casos a ordem é preservada para os bits chegarem na sequência em que foram enviados.
+
+-----Serviço orientado a conexões confiável.
+
+Possuí duas variações secundárias: sequências de mensagens e fluxos de bytes. Ao fotocopiar um livro, por exemplo, as mensagens enviadas são separadas, então ao escanear 1024 bytes 2 vezes, serão enviados 2 mensagens de 1024 bytes, e não 1 mensagem de 2048 bytes. Mas quando se tratam de fluxos de bytes, só há a necessidade de um fluxo de bytes do usuário para o servidor, e os limites de mensagens são irrelevantes.
+
+-----Serviço sem conexões.
+
+É chamado também de serviço de datagramas, assim como o serviço de telegramas, onde quando uma mensagem é enviada do transmissor para o receptor, o transmissor não tem uma confirmação de que sua mensagem chegou sucedidamente.
+
+-----Serviço sem conexões confiável.
+
+É similar a enviar uma carta registrada e pedir um aviso de recebimento, quando o aviso é recebido, a mensagem chegou com sucesso.
+
+-----Serviço sem conexão de solicitação/resposta.
+
+Um único datagrama com a solicitação é envaido, onde a resposta contém a réplica, igual a uma interação de um usuário com um banco de dados.
+
