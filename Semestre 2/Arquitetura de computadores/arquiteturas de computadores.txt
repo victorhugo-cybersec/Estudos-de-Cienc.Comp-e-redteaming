@@ -1,0 +1,65 @@
+---------------Arquitetura de Von Neumann
+
+---------- A arquitetura consiste de memória, barramentos, e o processador. O processador utiliza da memória para guardar instruções e informações temporariamente, e realiza processos a fim de trazer resultados e entrada/saída:
+
+Unidade de Controle (UC): Coordena as operações;
+
+Unidade Lógica e Aritmética (ULA): Executa operações matemáticas e lógicas;
+
+Memória: Onde tantos os dados quanto as instruções são armazenadas;
+
+Barramentos: São as vias de comunicação entre o hardware da arquitetura;
+
+----------Gargalo de Von Neumann
+
+Dados são enviados de ambos os lados, causando um gargalo (O processador tenta ler e escrever na memória);
+
+---------------Arquitetura de Harvard
+
+Na arquitetura de Harvard, há uma UC que tem acesso à ULA, à memória de instruções, memória de dados e entrada/saída, e utiliza de um único barramento para se comunicar com cada uma dessas partes, podendo receber e enviar dados em qualquer momento, com muito menos gargalos, justamente por separar a memória em duas.
+
+A arquitetura de Von Neumann e a de Harvard são diferentes em relação a funcionamento, complexidade e eficiência:
+
+---------------Arquitetura de Von Neumann
+
+---------- A arquitetura consiste de memória, barramentos, e o processador. O processador utiliza da memória para guardar instruções e informações temporariamente, e realiza processos a fim de trazer resultados e entrada/saída:
+
+Unidade de Controle (UC): Coordena as operações;
+
+Unidade Lógica e Aritmética (ULA): Executa operações matemáticas e lógicas;
+
+Memória: Onde tantos os dados quanto as instruções são armazenadas;
+
+Barramentos: São as vias de comunicação entre o hardware da arquitetura;
+
+----------Gargalo de Von Neumann
+
+Dados são enviados de ambos os lados, causando um gargalo (O processador tenta ler e escrever na memória);
+
+---------------Arquitetura de Harvard
+
+Na arquitetura de Harvard, há uma UC que tem acesso à ULA, à memória de instruções, memória de dados e entrada/saída, pode receber e enviar dados em qualquer momento, com muito menos gargalos, justamente por separar a memória em duas.
+
+A arquitetura de Von Neumann e a de Harvard são diferentes em relação a funcionamento, complexidade e eficiência:
+
+Na arquitetura de Von Neumann, tudo é mais simples, os gargalos não são raros, e a eficiência é baixa, já na de Harvard, a arquitetura é mais complexa, os gargalos são poucos, e a eficiência é maior devido à quantidade de barramentos e a existência de duas memórias que armazenam informações diferentes (dados e instruções).
+
+---------------Diferenças das arquiteturas Von Neumann e Harvard
+
+Na arquitetura de Von Neumann, tudo é mais simples, os gargalos não são raros, e a eficiência é baixa, já na de Harvard, a arquitetura é mais complexa, os gargalos são poucos, e a eficiência é um pouco maior devido à quantidade de barramentos e a existência de duas memórias que armazenam informações diferentes (dados e instruções). Também existem computadores que usam arquiteturas Harvard que podem ser mais lentas.
+
+---------------Arquitetura CISC (Focado em software)
+
+Foca nas instruções do processador, onde as instruções podem realizar várias operações, e podem ter tamanho variado, tendo instruções curtas ou não. Menos código é necessário para programar, e a eficiência na memória é maior, devido a uma transferência de tarefas da memória para o processador, porém, graças a isso, também tornava os processadores mais lentos, além de mais ciclos de clock por instrução eram necessários.
+
+---------------Arquitetura RISC (Também focado em software)
+
+Também foca nas instruções do processador, nesse caso, ele utiliza de instruções reduzidas, aonde mais instruções são feitas, mas são menores, o que permite uma maior eficiência dos processadores, menos uso de energia, porém muito mais código, e mais instruções para uma mesma tarefa.
+
+---------------RISC e CISC
+
+Hoje em dia, os processadores utilizam de ambas as arquiteturas, a fim de obter o melhor dos dois mundos.
+
+----------Como isso é feito?
+
+O CISC pega instruções complexas, e manda para uma outra camada de hardware que é RISC, e divide a instrução em várias instruções pequenas, otimizando muito mais o processo.

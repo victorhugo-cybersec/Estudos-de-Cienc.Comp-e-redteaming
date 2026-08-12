@@ -1,0 +1,39 @@
+---------------O que são sistemas de integração?
+
+São sistemas feitos para juntar uma ponta à outra e manipular dados recebidos de uma ponta a fim de os filtrar e manipular para que a outra ponta consiga receber esses dados de maneira apropriada, por meio de uso de tecnologias adequadas como ferramentas, código e etc.
+
+---------------Como as empresas definem seus sistemas de informação?
+
+Hoje as empresas buscam sistemas de informação best of breed, onde é buscado o melhor sistema de informação para cada finalidade, elevando a variedade de dados e aplicações.
+
+---------------Tipos de Abordagens:
+
+----------Abordagem Tradicional;
+
+A abordagem tradicional de sistemas de integração baseia-se em conexões diretas, pontuais (ponto a ponto ou point-to-point) e no uso de ferramentas centralizadas legadas, como barramentos de serviços (ESB) e rotinas de extração de dados (ETL). Esse modelo foca em projetos fechados e codificação manual pesada feita por equipes centralizadas.
+
+----------Abordagem sistemática;
+
+Na integração de SIs há conceitos, profissionais, técnicas, ferramentas, metodologia de trabalho e profissionais especializados na integração entre SIs aglutinados em torno de um centro de competência integração de sistemas (CCIS);
+
+Este centro é responsável pela administração do ambiente de integração. Os profissionais do CCIS estudam a demanda de integração trazida pelas equipes de projeto de cada novo SI, analisando a tecnologia e a ferramenta mais apropriada para desenvolver os elementos de integração necessários.
+
+---------------Estilos de Integração:
+
+-----Mensagens (Envio e recebimento de mensagens);
+
+-----Transferência de arquivos (Útil para quando a comunicação não pode ser por APIs ou outros métodos de integração avançados);
+
+-----Compartilhamento de dados;
+
+-----Chamadas a procedimentos;
+
+-----SOA (Integração por URL, com diretórios, armazenados no mesmo sistema);
+
+-----ETL (Conexão banco com banco, "server com server");
+
+-----RPC (Executa uma função em um server como se fosse uma função local);
+
+-----RMI (Similar ao RPC, porém com classes e objetos);
+
+-----Eventos (Serviços escutando a rede e aguardando dados, engloba request e response com APIs, por exemplo).

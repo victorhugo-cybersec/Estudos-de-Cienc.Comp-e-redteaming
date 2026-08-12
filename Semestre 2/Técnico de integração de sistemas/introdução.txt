@@ -1,7 +1,0 @@
----------------O que são sistemas de integração?
-
-São sistemas feitos para juntar uma ponta à outra e manipular dados recebidos de uma ponta a fim de os filtrar e manipular para que a outra ponta consiga receber esses dados de maneira apropriada, por meio de uso de tecnologias adequadas como ferramentas, código e etc.
-
----------------Como as empresas querem isso?
-
-Hoje as empresas buscam sistemas de integração best of breed, onde é buscado o melhor sistema de integração para cada finalidade, elevando a variedade de dados e aplicações.
