@@ -1,0 +1,28 @@
+---------------O que é a pipeline?
+
+-----É uma técnica que divide a execução em etapas. Ela permite que uma instrução inicie antes da anterior terminar, e processa várias instruções simultaneamente de fases diferentes, o que leva a um aumento de desempenho do processador.
+
+----------Como um processador funcionaria sem pipeline?
+
+-----Imagine que o processador tenha que executar essas instruções:
+A = 5
+B = A + 3
+
+Onde A e B são registradores (armazenamento interno do processador)
+
+Etapas do modelo clássico de 5 estágios (sem pipeline):
+
+1. IF (Instruction Fetch): Busca - a instrução é lida da memória;
+2. ID (Instruction Decode): Decodificação - a UC entende o que deve ser feito;
+3. EX (Execute): Execução - a ULA realiza o cálculo;
+4. MEM (Acesso à memória) - usada apenas se houver escrita na memória;
+5. WB (Write Back) - o resultado é gravado no registrador.
+
+No resultado final, B passa a ser 8.
+A próxima instrução só começa quando todas as etapas da anterior terminam.
+
+Resultado: Como cada etapa consome um ciclo de clock, 1 instrução completa por 5 ciclos de clock.
+
+----------E com pipeline? Como funciona?
+
+No mesmo clock em que estamos executando uma instrução, podemos executar muito mais outras diferentes no mesmo clock, pois quando uma instrução é executada, no próximo clock ela estaria inutilizada num processador sem pipeline, mas com pipeline, ela continuaria trabalhando no próximo clock, com a próxima instrução, e isso não sobrecarrega o processador, muito pelo contrário, pois o processador só se desgasta realmente com a quantidade de clocks, logo com o pipeline esses clocks são utilizados com muito mais eficiência, o que faz com que não haja necessidade de muitos clocks, e então subsequencialmente otimiza o processador.

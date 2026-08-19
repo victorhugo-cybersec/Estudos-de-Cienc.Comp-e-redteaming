@@ -1,0 +1,36 @@
+---------------APIs HTTP
+
+----------O que é uma API REST?
+
+-----Uma API é uma Application Programming Interface, que permite comunicação apdronizada entre diferentes sistemas através do protocolo HTTP.
+
+-----O cliente envia uma requisição solicitando dados ou ações, e o servidor processa o pedido retornando uma resposta com um código de status e dados (geralmente JSON).
+
+----------Fluxo de APIs
+
+-----O cliente dispara uma requisição HTTP (GET, POST, etc) com cabeçalhos e parâmetros.
+
+-----O servidor recebe a requisição, valida os dados e consulta as regras de negócio e bancos de dados.
+
+-----O servidor responde com um status HTTP (por exemplo, 200) e payload formatado em JSON.
+
+----------Fetch API
+
+-----Uma interface ativa dos navegadores modernos, que não requer instalação de pacotes externos.
+Ex:
+
+fetch('/api/dados').then(res => res.json()).then(data => console.log(data));
+
+----------Requisição GET: Consulta de dados
+
+-----O método GET é utilizado para buscar informações no servidor sem alterar o estado do sistema.
+
+----------Requisição POST: Envio de dados
+
+-----Finalidade do POST: Usado para criar novos recursos ou enviar dados para processamento no servidor;
+
+-----Envio de payload em JSON: Requer a conversão do objeto JavaScript em texto usando JSON.stringify() no Fetch;
+
+-----Cabeçalho Content-Type: É fundamental definir 'Content-type': 'application/json' para instruir o servidor sobre o formato dos dados;
+
+-----Simplicidade no Axios: O Axios serializa objetos Javascript para JSON automaticamente ao passar o payload no segundo parâmetro.

@@ -1,0 +1,37 @@
+---------------Barramentos
+
+-----Elementos de interconexão entre componentes do computador, são compostos por 3 linhas:
+
+-Linha de endereços;
+
+-Linha de dados;
+
+-Linha de controle.
+
+-----Linhas de endereço: Endereços da origem e destino dos dados;
+
+-----Linhas de dados: Movimentação de dados;
+
+-----Linhas de controle: Faz com que a memória, CPU e os periféricos trabalhem sem problemas;
+
+---------------Registradores da CPU
+
+-----PC (Program Counter)
+
+Armazena o endereço da instrução a ser executada;
+
+-----MAR (Memory Address Register)
+
+Armazena um endereço de memória;
+
+-----MBR (Memory Buffer Register)
+
+Armazena uma palavra de dados (lida ou escrita);
+
+-----IR (Instruction Register)
+
+Contém a última instrução buscada.
+
+----------Ciclo de busca e execução
+
+Dados são carregados, decodificados e executados, criando um ciclo onde após serem executados, são carregados novamente.

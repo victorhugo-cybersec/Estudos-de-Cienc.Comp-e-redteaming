@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício de APIs</title>
+  <!-- Importando o Axios via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 500px; margin: 0 auto; }
+    .card { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+    button { padding: 8px 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>Painel de Requisições</h1>
+
+  <!-- Seção Fetch -->
+  <div class="card">
+    <h2>1. Clima Atual (usando Fetch)</h2>
+    <p>Latitude: -23.55 | Longitude: -46.63 (São Paulo)</p>
+    <button id="btn-fetch">Buscar Temperatura</button>
+    <p id="resultado-fetch">Clique no botão para carregar...</p>
+  </div>
+
+  <!-- Seção Axios -->
+  <div class="card">
+    <h2>2. Curiosidade do Dia (usando Axios)</h2>
+    <button id="btn-axios">Gerar Curiosidade</button>
+    <p id="resultado-axios">Clique no botão para carregar...</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

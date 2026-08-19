@@ -1,0 +1,172 @@
+---------------Gerenciamento de Identidades e o Ataque de Conta Privilegiada;
+// MSc. Lorena S. Bezerra Borges, Analista de Segurança da Informação do STF.
+
+----------Gerenciamento de Identidade
+
+-----É a prática de garantir que cada identidade, humana ou máquina, tenha acesso adequado aos recursos certos, no momento certo, pelo motivo certo.
+
+Identidades que foram gerenciadas para ter privilégios podem ser utilizadas por vários atacantes:
+
+- Credenciais Comprometidas;
+
+Contas privilegiadas roubadas por atacantes.
+
+- Insider Malicioso;
+
+Utiliza intencionalmente sua credencial para atitudes ilegais.
+
+- Insider Negligente.
+
+Descuido de um funcionário por falta de conhecimento de processos de segurança.
+
+----------Ataques de conta privilegiada legítima
+
+53% das razões de ataques de conta privilegiada em 2025 foram por insiders negligentes/enganados.
+
+Causas de incidentes negligentes:
+IA Sombra
+Webmail pessoal
+Sites de compartilhamento de arquivos
+
+Agentes de inteligência artificial também são responsáveis por vazamentos de dados.
+
+----------A evolução das defesas perimetrais
+
+-----Defesas tradicionais
+
+Defesas perimetrais tradicionais estão mais robustas do que nunca.
+
+-----O foco do ataques
+
+Os ataques agora são focados em phishing numa grande maioria.
+
+Com trabalho remoto, aplicações em nuvem, dispositivos pessoais e corporativos, o verdadeiro problema hoje está focado no ser humano.
+
+----------Formas de compromentimento de credenciais principais, atualmente:
+
+-----Phishing;
+
+-----Reutilização de senhas;
+
+-----Malware-Infostealers; (Rouba senhas salvas, cookies e o autofill)
+
+-----Engenharia social;
+
+-----Bancos de dados hackeados;
+
+-----Suborno de funcionários;
+
+----------Ciclo de ataque:
+
+- Acesso inicial;
+- Escalonamento de privilégios;
+- Movimento lateral;
+- Exfiltração;
+- Monetização;
+- Infecção por malware;
+- Venda de dados na Dark Web;
+
+----------Identity and Access Management
+
+IAM é um framework estratégico que é o que garante que cada identidade, humana ou máquina, tenha acesso adequado aos recursos certos, no momento certo, pelo motivo certo.
+
+Automatização onboarding e offboarding, atualização automática na mudança de funções.
+
+Faz revisão de acessos periodicamente:
+
+Certificação de acessos;
+
+Remoçao de contas órfãs;
+
+Contas dormentes.
+
+----------Arquitetura Zero Trust; (Literalmente o AI-5, todos são uma ameaça até que seja provado o contrário)
+
+----------Conclusão:
+
+A identidade é o novo perímetro, ela é a moeda de negociação, é o que pode deixar uma empresa vulnerável, por isso deve ser a mais cuidada.
+
+---------------Azure no Redteam em 2026
+//Igor Melo Benevides, Operador Especialista de Red Team na Covert Swam
+
+----------Azure em 2026
+
+- Active Directory está envelhecendo;
+- Não há necessidade de comprometer uma máquina;
+- APTs estão se adaptando à métodos antigos.
+- O apresentador faz comparações de maneiras em que o Active Directory e o Azure lidam com conceitos, como Protocolos de autenticação, Credencial primária, Credencial de máquina, Repositório de identidades, Relacionamento de confiança e Credencial persistente.
+
+----------Tokens do Azure
+
+----- ID Token
+
+Dura 1 hora, é uma enumeração de quem é o acesso.
+
+----- Access Token
+
+Dura 90 minutos, atrelado a um recurso específico.
+
+----- Refresh Token
+
+Dura 90 dias e pode ser renovado, não é atrelado a recursos específicos, e o reset de senha não invalida ele por padrão.
+
+----- Primary Refresh Token // Dá muito acesso, essencial para ataque
+
+Dura 14 dias e renova a cada uso, é atrelado a um dispositivo no Entra ID, e é essencial para satisfazer requerimentos de dispositivo complaince.
+
+----------Azure na visão de atacante:
+
+-----Graph API:
+
+Possuí objetos do Entra ID, M365, Office,
+
+-----Key Vault:
+
+Possuí credenciais
+
+----------Ferramentas utilizadas no hackeamento de um tenant:
+
+----- AzureHound;
+----- Token Tactics;
+----- GraphSpy;
+----- ROADtools; 
+----- AADInternals;
+
+---------------Como enxergar sua empresa como um atacante
+//Ismael Rocha, especialista em cibersegurança.
+
+----------Superfície de Ataque Externa
+
+Se refere a tudo que está fora da organização como domínios, sub-domínios, etc.
+
+----------Você não pode proteger o que você não sabe que existe
+
+A superfície externa geralmente é a porta de entrada para um atacante obter informações da sua empresa. É importante não exagerar na criação de muitos domínios e sub-domínios a fim de evitar áreas não protegidas, é como se, quanto maior a "superfície de contato", maior o risco de ser danificado.
+
+----------OSINT passivo
+
+Governar, identificar, proteger, detectar, responder e recuperar são os passos para um OSINT passivo, onde é possível entender a maneira que o atacante enxerga e se proteger dele.
+
+Vazamentos de dados também devem ser revisados tendo em vista a possibilidade de possuir informações da empresa, também.
+
+É importante esconder as versões dos softwares instalados no sistema da empresa, pois se as versões forem antigas, é possível dos atacantes de utilizarem e abusarem de CVEs.
+
+----------Casos reais de empresas diversas:
+
+- Trello exposto;
+- Subdomínio desconhecido;
+- Portas 21 e 22;
+- Vazamento de credenciais.
+
+----------Motivo de exposições:
+
+- Falta de visibilidade;
+- Inventário incompleto de ativos;
+- Shadow IT e ativos esquecidos;
+- Crescimento acelerado de cloud API e aplicações;
+- Ausência de monitoramento continuo;
+- Rotatividade de profissionais;
+- Falta de governança e definição de responsabilidades;
+- Priorização inadequada dos riscos.
+
+---------------Para quem estiver lendo essas anotações, não cheguei a continuar no resto do evento devido ao horário que estava atingindo horário de pico, então fui logo para casa, espero ter ajudado com essas anotações!

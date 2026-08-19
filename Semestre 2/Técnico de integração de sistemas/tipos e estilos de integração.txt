@@ -37,3 +37,21 @@ Este centro é responsável pela administração do ambiente de integração. Os
 -----RMI (Similar ao RPC, porém com classes e objetos);
 
 -----Eventos (Serviços escutando a rede e aguardando dados, engloba request e response com APIs, por exemplo).
+
+---------------Sistemas Distribuídos
+
+Se tratam de um aglomerado de computadores que são vistos pelo usuário como um serviço único. É uma maneira de juntar uma grande quantia de processos de computadores em um único serviço.
+
+----------Vantagens:
+
+-----Escalabilidade
+
+É possível aumentar os recursos do sistema;
+
+-----Tolerância a defeitos
+
+A disponibilidade de vários computadores e o potencial para replicar as informações significa que os sistemas distribuídos podem ser tolerantes com falhas de hardware/software.
+
+----------Requisitos dos sistemas distribuídos
+
+-----Middleware: Fica entre os componentes distribuídos do sistema, a fim de permitir que eles possam se comunicar e trocar dados.
