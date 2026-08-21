@@ -1,0 +1,70 @@
+---------------O que é a pipeline?
+
+-----É uma técnica que divide a execução em etapas. Ela permite que uma instrução inicie antes da anterior terminar, e processa várias instruções simultaneamente de fases diferentes, o que leva a um aumento de desempenho do processador.
+
+----------Como um processador funcionaria sem pipeline?
+
+-----Imagine que o processador tenha que executar essas instruções:
+A = 5
+B = A + 3
+
+Onde A e B são registradores (armazenamento interno do processador)
+
+Etapas do modelo clássico de 5 estágios (sem pipeline):
+
+1. IF (Instruction Fetch): Busca - a instrução é lida da memória;
+2. ID (Instruction Decode): Decodificação - a UC entende o que deve ser feito;
+3. EX (Execute): Execução - a ULA realiza o cálculo;
+4. MEM (Acesso à memória) - usada apenas se houver escrita na memória;
+5. WB (Write Back) - o resultado é gravado no registrador.
+
+No resultado final, B passa a ser 8.
+A próxima instrução só começa quando todas as etapas da anterior terminam.
+
+Resultado: Como cada etapa consome um ciclo de clock, 1 instrução completa por 5 ciclos de clock.
+
+----------E com pipeline? Como funciona?
+
+No mesmo clock em que estamos executando uma instrução, podemos executar muito mais outras diferentes no mesmo clock, pois quando uma instrução é executada, no próximo clock ela estaria inutilizada num processador sem pipeline, mas com pipeline, ela continuaria trabalhando no próximo clock, com a próxima instrução, e isso não sobrecarrega o processador, muito pelo contrário, pois o processador só se desgasta realmente com a quantidade de clocks, logo com o pipeline esses clocks são utilizados com muito mais eficiência, o que faz com que não haja necessidade de muitos clocks, e então subsequencialmente otimiza o processador.
+
+---------------Hazards de pipeline
+
+Uma hazard de pipeline é tudo que interrompe, atrapalha ou impede a pipeline.
+
+-----Hazards de CPU:
+
+Problema que impede que a próxima instrução entre no estágio correto do pipeline.
+
+A CPU depende de um dado que ainda não existe, ou toma uma decisão de desvio ainda não tomada, ou tenta acessar um recurso ocupado por outra instrução.
+
+----------Tipos de hazards de pipeline
+
+-----Data hazard:
+
+Quando o dado ainda não está pronto, então a instrução tenta resgatar um valor que a instrução anterior ainda não terminou de produzir.
+
+A solução para esse hazard seria o método de stalling/bolhas, onde é inserido um ciclo que não introduz nenhum dado a fim de fazer a instrução precipitada a esperar o conteúdo necessitado.
+
+Também há o forwarding/bypassing, onde a instrução precipitada irá resgatar a informação assim que a outra instrução passar da execução, ou seja, antes de ser enviada para a memória e escrita, ela é enviada diretamente para a outra instrução, e então continua o seu processo inicial.
+
+Reordering (Reordenamento de instruções) é uma reorganização de instruções para evitar dependência direta, por exemplo, ao invés de deixar duas instruções em sequência onde a segunda depende da primeira, é melhor colocar uma instrução dependente entre as duas a fim de dar mais tempo para a primeira instrução terminar e entregar seus dados à instrução dependente.
+
+-----Control hazard:
+
+Quando há uma instrução de condicional e enquanto não há uma decisão, a CPU não sabe qual operação executar.
+
+A solução apropriada também seria a de stalling, onde a CPU espera alguns ciclos antes de começar a executar.
+
+Outra solução é o delay slot, onde a próxima instrução será executada enquanto não é tomada uma decisão (somente se a instrução for independente). Não há rollback caso a decisão for tomada.
+
+De terceira solução, temos o branch prediction, que tenta adivinhar se o desvio vai acontecer de acordo com um histórico de desvios para a condicional, se ela acertar, não há atraso, mas se errar, um flush é feito para descartar instruções carregadas, e então é feito um rollback para executar a operação certa.
+
+-----Structural hazard:
+
+Por exemplo, é possível imaginar uma CPU com apenas uma memória, compartilhada para leitura e escrita de instruções e dados. Caso duas instruções precisassem ocupar a memória, haveria um conflito e então teríamos uma structural hazard.
+
+Como sempre, temos de solução o stall a fim de esperar uma das instruções a serem executadas para as outras executarem.
+
+Outra solução é a duplicação de hardware, ou seja, apenas dar upgrade na máquina, a fim de melhorar sua eficiência.
+
+E uma outra solução, seria a reordenação das instruções, com a mesma intenção de esperar a execução da segunda instrução, assim como em data hazard.

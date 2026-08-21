@@ -1,0 +1,5 @@
+----------Inter-redes:
+
+-----Redes possuem diferentes software e hardware no mundo. Para a conexão de redes deste estilo, são usadas máquinas chamadas gateways para estabelecer a conexão e fazer as conversões necessárias. Um conjunto de redes interconectadas é chamado de inter-rede ou internet, são termos que podem ser usados sem se referir diretamente à Internet mundial (uma rede específica), sempre representada de inicial maiúscula.
+
+-----Inter-redes, ou internets, geralmente se tratam de um conjunto de LANs conectadas por uma WAN.

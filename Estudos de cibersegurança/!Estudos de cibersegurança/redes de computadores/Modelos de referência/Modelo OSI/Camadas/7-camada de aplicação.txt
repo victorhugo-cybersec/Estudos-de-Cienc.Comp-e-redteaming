@@ -1,0 +1,3 @@
+---------------A camada de aplicação
+
+Contém uma série de protocolos necessários para usuários. Um desses protocolos é o HTTP (HyperText Transfer Protocol), que define a base da World Wide Web (WWW). Outros protocolos são usados para transferência de arquivos, correio eletrônico e transmissão de notícias por rede.

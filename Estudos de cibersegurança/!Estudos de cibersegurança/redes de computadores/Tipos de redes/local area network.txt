@@ -1,0 +1,5 @@
+----------Local Area Network (LANs, ou, redes locais), o que é?
+
+-----São redes privadas, para estabelecimentos. Geralmente, uma LAN é feita por meio de cabos físicos (conexão guiada).
+
+-----Dispositivos ao compartilharem um meio em uma LAN são chamadas de redes de difusão, e precisam de estratégias dinâmicas e estáticas para não ocorrer o encontro de dados.

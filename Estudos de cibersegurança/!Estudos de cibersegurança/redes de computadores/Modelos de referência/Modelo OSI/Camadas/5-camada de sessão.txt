@@ -1,0 +1,3 @@
+---------------A camada de sessão
+
+Essa camada permite que os usuários de diferentes máquinas estabeleçam sessões entre eles. Uma sessão contém diversos serviços, controle de diálogo, gerenciamento de símbolos e sincronização, que são processos para uma sessão funcional e eficiente entre duas ou mais máquinas.

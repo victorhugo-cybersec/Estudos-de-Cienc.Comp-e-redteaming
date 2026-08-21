@@ -1,0 +1,9 @@
+----------Sub-redes
+
+-----As sub-redes são divididas em dois componentes: hosts, e roteadores.
+
+-----Sub-redes de store-and-forward (armazenamento e encaminhamento) ou comutação de pacotes são redes que utilizam dum princípio de armazenar os dados enviados por meio da linha de entrada até que a linha de saída seja liberada para os dados poderem ser encaminhados. Quando os pacotes em redes desse tipo são pequenos e de mesmo tamanho, são chamados de células, e permitem os roteadores de verem previsibilidade na rede, aumentando a eficácia dela, porém essas células podem ser enviadas com dados muito menores e mais rápidos, causando um Denial of Service.
+
+----------Roteadores
+
+-----Os roteadores são computadores especializados, utilizados para conectar três ou mais hosts (Uma LAN), ao receber dados de uma linha de entrada, devem de escolher uma linha de saída desses dados e usam de algoritmos para saber o caminho mais rápido até o destino (Esse algoritmo pode ser burlado a fim de redirecionar os dados de um roteador para uma rede do atacante). Os pacotes enviados pelo host para os roteadores, são enviados a outros roteadores pelo caminho mais curto e então chegam a outros hosts.

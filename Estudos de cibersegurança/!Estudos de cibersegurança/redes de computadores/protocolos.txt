@@ -1,0 +1,11 @@
+-----Protocolos
+
+Um protocolo é um acordo entre as partes de uma máquina que se comunicam, estabelecendo como será a comunicação entre elas. São os pares (em inglês peers, que são entidades que ocupam camadas correspondentes em diferentes máquinas, literalmente pares) que se comunicam por meio do protocolo.
+
+----------A diferença entre serviços e protocolos
+
+Serviços são conjuntos de primitivas que uma camada oferece à camada acima dela, ou seja, se relaciona a uma interface entre duas camadas, onde a camada inferior fornece o serviço, e a superior, o usuário do serviço.
+
+Protocolos são conjuntos de regras que controlam o formato e o significado de pacotes ou mensagens que são trocadas pelas entidades pares contidas em uma camada. As entidades utilizam protocolos com a finalidade de implementar definições de serviço, e tem a liberdade de trocar seus protocolos, assim que tal feito não altere o serviço visível para os usuários. O serviço e o protocolo, enfim, são independentes um dos outros.
+
+Sei que parece bem confuso as explicações do Tanenbaum, mas de maneira resumida, serviços são as interações entre camadas, e protocolos se tratam dos pacotes de dados que são enviados de uma camada N para a camada N de outra máquina, e esses pacotes passam por encapsulamento e desencapsulamento (Detalhado no arquivo 'arquitetura de redes.txt').

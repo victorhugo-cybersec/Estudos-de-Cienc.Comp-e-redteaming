@@ -1,0 +1,3 @@
+---------------A camada de transporte
+
+Aceita dados da camada acima dela, divide os dados caso sejam muito grandes, e então os repassam à camada de rede, assegurando a chegada dos fragmentos de maneira correta na outra camada, e feito com eficiência. A camada de transporte também é responsável por determinar os tipos de serviço que devem ser fornecidos à camada de sessão e aos usuários da rede, o que é determinado quando uma conexão é estabelecida.

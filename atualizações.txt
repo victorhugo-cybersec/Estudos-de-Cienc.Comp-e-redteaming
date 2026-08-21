@@ -3,3 +3,6 @@ Conversei com o Gemini em relação às minhas anotações e agora entendi que t
 
 13/05/2026
 Esqueci de falar sobre isso, mas ignorei isso que pensei na atualização anterior. Vou continuar deixando as pastas de estudo profundo e a de consulta, mas sinto que há sim uma necessidade de ler toda a documentação, afinal, todo conhecimento é pouco e sinto que vou ser um profissional muito maior se eu fizer desse jeito que penso ser melhor para mim. Afinal, me sinto capaz disso.
+
+20/08/2026
+Estou somente na página 47 de 600 e pouco no livro de redes do tanenbaum, tudo isso pois sinto a necessidade de anotar tudo. Vou criar arquivos .txt diversos explicando conceitos de maneira bem resumida e focar em ler e guardar na memória, fazendo com que as minhas anotações ainda sejam úteis ao mesmo tempo, e me permitindo progredir na leitura do livro, o que me permite entender mais rápido os fundamentos. Isso vai ser aplicado a todos os livros que vou ler a partir de hoje.

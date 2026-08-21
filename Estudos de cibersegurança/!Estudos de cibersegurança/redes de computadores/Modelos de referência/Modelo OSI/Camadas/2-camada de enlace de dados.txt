@@ -1,0 +1,3 @@
+---------------A camada de enlace de dados / interface de rede
+
+Encarregada de transformar um canal de transmissão bruta em uma linha que pareça livre de erros de transmissão não detectados para a camada de rede. Para isso, a camada faz com que o transmissor divida dados de entrada em quadros de dados com centenas a milhares de bytes, e transmita os quadros sequencialmente. Essa camada possuí um possível problema de o transmissor enviar informações muito rápido ao receptor (Citado na linha 107 dessas anotações). É responsável por cuidar da conexão segura entre dois computadores conectados a uma rede física.

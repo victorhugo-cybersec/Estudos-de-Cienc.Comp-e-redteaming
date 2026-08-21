@@ -1,0 +1,15 @@
+---------------Introdução à Programação Orientada a Objetos
+
+----------O que são objetos?
+
+São como representações de objetos do mundo real, por ter características e comportamentos. Isso se chama abstração.
+
+----------O que são classes?
+
+São um conjunto de características e comportamentos padrões para objetos que forem criados na classe tenham esses padrões.
+
+---------------Na programação
+
+-----Características são chamadas de Atributos (Variáveis).
+
+-----Comportamentos são chamados de Métodos (Funções).

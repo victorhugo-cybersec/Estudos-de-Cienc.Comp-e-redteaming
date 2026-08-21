@@ -1,0 +1,3 @@
+----------Redes geograficamente distribuídas (redes que abrangem um país ou continente, em inglês, Wide Area Network (WAN)):
+
+-----Essas redes possuem hosts, e esses hosts são conectados a uma sub-rede (empresa de telefonia/provedor de serviços da Internet).

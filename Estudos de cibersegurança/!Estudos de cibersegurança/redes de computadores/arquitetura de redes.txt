@@ -1,0 +1,36 @@
+----------Arquitetura de redes
+
+-----Hierarquias de protocolos
+
+Hierarquias de protocolos são numa maioria redes organizadas como pilhas/níveis colocadas umas sobre as outras, igual uma stack da CPU. O objetivo de cada camada é oferecer serviços para as camadas superiores, é como se cada camada fosse uma espécie de máquina virtual que oferece serviços determinados à camada acima dela.
+
+Esse conceito é familiar na programação, e é conhecido majoritariamente como Programação Orientada a Objetos (POO), também conhecido como ocultação de informações, tipos de dados abstratos e encapsulamento de dados. Na sua base, significa que um determinado item de software/hardware fornece um serviço aos seus usuários, porém mantém oculto os detalhes do seu estado interno e de seus algoritmos, é resumidamente esconder o funcionamento de um micro-ondas e só mostrar os botões e o interior onde se insere a comida, por exemplo.
+
+-----Dinâmica de uma hierarquia de protocolos
+
+As informações que devem ser transferidas de uma camada N para outra camada N são transferidas descendo camada por camada até alcançar a camada de conexão física, e então por meio físico, as informações chegam até a outra máquina, e então, ao chegar na outra máquina, as informações sobem camada por camada até atingir a mesma camada N que estava esperando receber os pacotes de dados da outra máquina.
+
+Para cada par de camadas adjacentes (camada N de uma máquina e camada N de outra máquina), existe uma interface da qual define operações e serviços que a camada inferior tem a oferecer à camada que se encontra acima dela. Para isso, é necessário que as camadas tenham um conjunto específico de funções bem definidas, que permite uma menor quantia de informações que devem ser passadas camada por camada, além disso, devido à simplificação de cada camada, é consideravelmente muito mais facilitado o processo de trocar uma camada por outra camada (como a substituição de linhas telefônicas por canais de satélite), pois assim, tudo que a camada nova deve fazer é satisfazer os mesmos serviços que eram passados pela camada anterior para a camada de cima.
+
+-----Encapsulamento
+
+Quando informações são passadas de uma camada N para a camada N de outra máquina, as camadas de baixo que transferem a informação não podem apagar nada dela, apenas incrementar informações (porém os pacotes podem ser deletados por inteiro pelas camadas inferiores caso haja interferência e 1 único bit ou mais seja perdido pelo processo de transmissão dos pacotes), e as informações não podem ser enviadas novamente para cima, esse processo se chama de encapsulamento. 
+
+-----Desencapsulamento
+
+Quando os dados sobem para a camada N na outra máquina, informações não são adicionadas, mas sim deletadas até chegar na camada N, esse processo se chama de desencapsulamento. O encapsulamento e desencapsulamento é como se fossem as camadas de baixo da máquina A adicionando informações importantes para o processamento do pacote de dados que vai chegar na outra máquina, e quando os pacotes chegam na máquina B, cada camada lê essas informações, faz os processos necessários que foram escritos pela máquina A e então deletam essas informações adicionais, enviando o pacote para a camada N da máquina B sem nenhuma alteração, ou seja, igual a como foi criada na camada N da máquina A.
+
+-----Arquitetura de redes
+
+Um conjunto de camadas e protocolos é chamado de arquitetura de redes. Tudo na arquitetura deve ter informações o suficiente para permitir um implementador a desenvolver programas ou construir o hardware de cada camada.
+
+Uma lista de protocolos usados por um determinado sistema é chamada pilha de protocolos.
+
+----------Questões de projeto relacionadas às camadas: Problemas comuns e soluções
+
+-----No livro, são citadas observações em relação à arquiteturas de redes, onde o autor cita a necessidade de controle de erros (onde é necessário um meio para o receptor falar ao transmissor que a mensagem chegou sem erros ou não), quantidade de canais lógicos na conexão (a fim de compreender a arquitetura, possibilitando a sua manutenção e manipulação mais fácil), e o endereçamento para transmissores e receptores, considerando que em certas arquiteturas, haverão muitos.
+
+-----Também há um problema em relação a receptores lentos e transmissores rápidos, dependendo do caso, o receptor pode ser sobrecarregado com informações, e isso possuí algumas resoluções:
+
+- Feedback do receptor para o transmissor em relação à situação atual do receptor;
+- Limitar o transmissor a uma velocidade de transmissão pré-determinada, assim como um computador faria com o clock conectado a um hardware antigo: isso é chamado de controle de fluxo, feito para não sobrecarregar o receptor.

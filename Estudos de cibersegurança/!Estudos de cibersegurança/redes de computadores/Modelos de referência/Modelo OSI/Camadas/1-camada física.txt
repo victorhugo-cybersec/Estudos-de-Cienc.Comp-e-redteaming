@@ -1,0 +1,3 @@
+---------------A camada física 
+
+Na camada física, o projeto de rede não pode permitir erros de bit (bit 1 chegar como bit 0 no destino), logo são discutidas a voltagem necessária para representação dos bits 0 e 1, os nanossegundos de duração de um bit, o fato da transmissão poder ser de "mão dupla" ou "mão única" (dados vem e vão de um lado pro outro e vice versa, ou apenas um lado pode enviar dados, e só então o outro pode enviar dados), a forma em que a conexão inicial será estabelecida e encerrada, quantos pinos o conector de rede terá, e a finalidade de cada pino. São todos problemas que devem ser discutidos e resolvidos na realização de um projeto de rede.

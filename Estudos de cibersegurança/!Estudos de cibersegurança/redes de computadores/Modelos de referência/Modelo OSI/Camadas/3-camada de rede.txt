@@ -1,0 +1,4 @@
+---------------A camada de rede
+
+Controla operações da sub-rede, uma das configurações mais importantes para um projeto de rede é determinar a maneira como os pacotes são roteados da origem até o destino, onde as rotas podem se basear em tabelas estáticas, ou determinadas no início de cada conversação, como em uma sessão de terminal.
+Caso haja muitos pacotes na sub-rede simultaneamente, os pacotes vão dividir o mesmo caminho, causando gargalos. O controle desse congestionamento é pertencente à camada de rede, a qualidade do serviço fornecido também. Resumidamente, a camada de redes é completamente responsável pelas suas conexões e é responsável por permitir que redes heterogêneas sejam interconectadas.

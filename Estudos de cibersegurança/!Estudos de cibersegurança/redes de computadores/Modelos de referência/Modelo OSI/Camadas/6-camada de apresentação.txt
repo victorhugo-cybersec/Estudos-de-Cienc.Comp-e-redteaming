@@ -1,0 +1,3 @@
+---------------A camada de apresentação
+
+A camada de apresentação é relacionada à sintaxe e à semântica das informações transmitidas. Uma sessão entre computadores com diferentes representações de dados podem ser lidadas nessa camada, onde é criada uma codificação padrão para a conexão.

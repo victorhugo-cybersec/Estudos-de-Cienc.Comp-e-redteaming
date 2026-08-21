@@ -1,0 +1,31 @@
+----------Modelo de referência OSI
+
+Uma proposta feita pela International Standards Organization (ISO), a fim de padronizar internacionalmente os protocolos empregados em diversas camadas. Em inglês é chamado de Interconexão de Sistemas Abertos, pois são sistemas que estão abertos à comunicação com outros sistemas.
+
+O modelo OSI vem com essas regras estabelecidas:
+
+1 - Uma camada deve ser criada onde houver necessidade de outro grau de abstração;
+
+2 - Cada camada deve executar uma função bem definida;
+
+3 - As funções das camadas devem ser escolhidas, de acordo com a definição de protocolos padronizados internacionalmente;
+
+4 - Os limites das camadas são definidos a fim de minimizar o fluxo de informaçõess por interfaces;
+
+5 - O número de camadas deve ter tamanho suficiente para funções distintas não precisarem ser colocadas na mesma camada e pequeno o suficiente para a arquitetura não ser difícil de controlar.
+
+O modelo OSI não é uma arquitetura de rede, justamente por apenas informar o que cada camada deve fazer.
+
+-----As camadas do modelo OSI
+
+São, num total, 7 camadas:
+
+Sétima camada: Aplicação;
+Sexta camada: Apresentação;
+Quinta camada: Sessão;
+Quarta camada: Transporte;
+Terceira camada: Rede;
+Segunda camada: Enlace de dados;
+Primeira camada: Física.
+
+Nesse modelo, numa conexão de hosts A e B respectivamente, os dados podem ser transmitidos em três camadas diferentes, não somente na primeira camada (física), quais essas camadas seriam as três primeiras: Rede, Enlace de dados, e física;

@@ -1,0 +1,45 @@
+----------Serviços orientados a conexões e serviços sem conexões
+
+-----Serviço orientado a conexões.
+
+Temos o fluxo de mensagens confiável, onde o usuário estabelece uma conexão que então é utilizada, depois liberada. Na maioria dos casos a ordem é preservada para os bits chegarem na sequência em que foram enviados.
+
+-----Serviço orientado a conexões confiável.
+
+Possuí duas variações secundárias: sequências de mensagens e fluxos de bytes. Ao fotocopiar um livro, por exemplo, as mensagens enviadas são separadas, então ao escanear 1024 bytes 2 vezes, serão enviados 2 mensagens de 1024 bytes, e não 1 mensagem de 2048 bytes. Mas quando se tratam de fluxos de bytes, só há a necessidade de um fluxo de bytes do usuário para o servidor, e os limites de mensagens são irrelevantes.
+
+-----Serviço sem conexões.
+
+É chamado também de serviço de datagramas, assim como o serviço de telegramas, onde quando uma mensagem é enviada do transmissor para o receptor, o transmissor não tem uma confirmação de que sua mensagem chegou sucedidamente.
+
+-----Serviço sem conexões confiável.
+
+É similar a enviar uma carta registrada e pedir um aviso de recebimento, quando o aviso é recebido, a mensagem chegou com sucesso.
+
+-----Serviço sem conexão de solicitação/resposta.
+
+Um único datagrama com a solicitação é envaido, onde a resposta contém a réplica, igual a uma interação de um usuário com um banco de dados.
+
+----------Primitivas de serviço
+
+As primitivas são operações que podem ser realizadas com o serviço, incluem:
+
+-----LISTEN: Bloco que espera uma conexão de entrada;
+
+-----CONNECT: Bloco que estabelece conexão com outro bloco que esteja esperando (outro serviço que esteja fazendo a operação de LISTEN);
+
+-----RECEIVE: Bloco que espera por uma mensagem de entrada;
+
+-----SEND: Envia uma mensagem ao par;
+
+-----DISCONNECT: Encerra a conexão.
+
+Ou seja, são dois pares de primitivas que se tratam de enviar e receber, e uma primitiva que termina a conexão. O primeiro par envolve a espera de uma solicitação de conexão e o envio de uma solicitação de conexão. O segundo par espera um envio de mensagem do serviço em que está conectado e o envio de uma mensagem.
+
+----------A diferença entre serviços e protocolos
+
+Serviços são conjuntos de primitivas que uma camada oferece à camada acima dela, ou seja, se relaciona a uma interface entre duas camadas, onde a camada inferior fornece o serviço, e a superior, o usuário do serviço.
+
+Protocolos são conjuntos de regras que controlam o formato e o significado de pacotes ou mensagens que são trocadas pelas entidades pares contidas em uma camada. As entidades utilizam protocolos com a finalidade de implementar definições de serviço, e tem a liberdade de trocar seus protocolos, assim que tal feito não altere o serviço visível para os usuários. O serviço e o protocolo, enfim, são independentes um dos outros.
+
+Sei que parece bem confuso as explicações do Tanenbaum, mas de maneira resumida, serviços são as interações entre camadas, e protocolos se tratam dos pacotes de dados que são enviados de uma camada N para a camada N de outra máquina, e esses pacotes passam por encapsulamento e desencapsulamento (Detalhado no arquivo 'arquitetura de redes.txt').
