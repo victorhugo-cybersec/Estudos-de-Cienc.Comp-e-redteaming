@@ -1,0 +1,3 @@
+----------A camada de aplicação
+
+Contém todos os protocolos de nível mais alto. Inclui o protocolo de terminal virtual (TELNET) que permite acesso à máquina por uma máquina distante, o protocolo de transferência de arquivos (FTP) e o protocolo de correio eletrônico (SMTP). Também há outros protocolos como o DNS (Domain Name Service), que mapeia os nomes de hosts para os respectivos endereços de rede, e o HTTP, protocolo usado para buscar páginas na World Wide Web.

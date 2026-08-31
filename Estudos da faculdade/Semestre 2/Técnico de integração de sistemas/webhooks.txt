@@ -1,0 +1,11 @@
+----------O que é um webhook?
+
+Um webhook é a forma mais simples e eficiente de fazer duas aplicações conversarem em tempo real.
+
+-----Polling
+
+Basicamente é requisitado uma resposta de sucesso da finalização do serviço para o servidor, porém enquanto o serviço não estiver terminado, o servidor mandará ao cliente que não está pronto todas as vezes. Essas requisições são feitas de tempo em tempo, por exemplo, a cada 2 minutos ele pergunta ao servidor se o serviço está pronto.
+
+-----Conceito técnico de um webhook
+
+Não se passa de um HTTP POST invertido acionado por um evento. O servidor que chama o cliente, e então faz um disparo de um payload em JSON com dados que o cliente precisa.

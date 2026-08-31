@@ -1,0 +1,3 @@
+----------A camada de host/rede
+
+O modelo não especifica muito bem a função da camada, mas diz que o host tem de se conectar à rede utilizando um protocolo para que seja possível enviar pacotes IP. Esse protocolo não é definido e varia de host para host e de rede para rede. São raras as explicações desse protocolo.

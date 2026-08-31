@@ -1,0 +1,10 @@
+----------Modelo de referência TCP/IP
+
+-----Feita para satisfazer necessidades do departamento de defesa dos EUA, onde precisavam de uma arquitetura flexível que se adaptasse a aplicações com requisitos divergentes, e que conexões permanecessem intactas enquanto máquinas conectadas estivessem funcionando, mesmo com linhas de transmissão parando de operar de maneira repentina.
+
+-----Esse modelo possuí 4 camadas:
+
+Quarta camada: Aplicação;
+Terceira camada: Transporte;
+Segunda camada: Inter-redes;
+Primeira camada: Host/rede.

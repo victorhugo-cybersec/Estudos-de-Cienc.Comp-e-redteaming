@@ -1,0 +1,7 @@
+----------A camada de inter-redes
+
+Essa camada integra toda a arquitetura, a função dessa camada é permitir que os hosts injetem pacotes em qualquer rede e garantir que eles trafegarão independentemente até o destino. Os pacotes podem também chegar desorganizados, dando a obrigação às camadas da máquina receptora a reorganizar os pacotes. A camada é resumidamente comparável a um sistema de correios.
+
+A camada é presente na internet, apesar de se chamar "inter-redes".
+
+Essa camada define um padrão para pacotes oficiais chamado IP (Internet Protocol). A função dessa camada é entregar pacotes IP onde forem necessários, é bem similar à camada de redes do modelo de referência OSI.

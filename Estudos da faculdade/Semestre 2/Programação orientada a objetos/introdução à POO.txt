@@ -2,7 +2,7 @@
 
 ----------O que são objetos?
 
-São como representações de objetos do mundo real, por ter características e comportamentos. Isso se chama abstração.
+São como representações de objetos do mundo real, por ter características e comportamentos. Isso se chama abstração. Eles são instâncias de classe, ou seja, fazem parte da classe.
 
 ----------O que são classes?
 
@@ -13,3 +13,29 @@ São um conjunto de características e comportamentos padrões para objetos que 
 -----Características são chamadas de Atributos (Variáveis).
 
 -----Comportamentos são chamados de Métodos (Funções).
+
+---------------Construtor e destrutor
+
+-----Construtor
+
+Feito para ser executado quando um objeto é instanciado.
+
+-----Destrutor
+
+Feito para ser executado quando um objeto é eliminado.
+
+---------------Encapsulamento
+
+-----Uma forma de proteger os atributos e métodos da classe, são usados modificadores de acesso:
+
+-----public:
+
+Pode ser acessado de qualquer lugar;
+
+-----private:
+
+Permite acesso apenas à própria classe onde o atributo ou método foi definido;
+
+-----protected:
+
+O acesso é permitido apenas dentro de classes ou subclasses do pacote.

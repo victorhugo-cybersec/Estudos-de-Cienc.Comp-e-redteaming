@@ -1,0 +1,3 @@
+----------A camada de transporte
+
+Tem a função de permitir que as entidades pares de hosts de origem e destino mantenham uma conexão. Dois protocolos são definidos aqui, sendo eles o TCP (Transmission Control Protocol - Protocolo de controle de transmissão) que permite a entrega sem erros de um fluxo de bytes de uma máquina a qualquer computador da inter-rede. Também é responsável de controlar o fluxo de mensagens a fim de evitar sobrecarregamento de um receptor lento.
