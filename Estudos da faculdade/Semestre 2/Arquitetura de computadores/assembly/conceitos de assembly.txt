@@ -1,0 +1,43 @@
+----------O que é Assembly?
+
+Assembly é uma linguagem de baixo nível, ou seja, uma linguagem mais próxima do hardware, utilizado para programas em nível de hardware e firmware, como sistemas operacionais, anti-vírus e outros.
+
+----------Compiladores e Interpretadores
+
+-----Compiladores
+
+Tradizem código-fonte de uma linguagem de alto nível para uma linguagem de baixo nível, a fim de criar um arquivo executável, para isso, o compilador analisa, otimiza e converte o código.
+
+-----Interpretadores
+
+Um interpretador analisa cada linha de código, e caso a linha que esteja sendo analisada esteja sem erros, ela é convertida e executada em código de baixo nível.
+
+----------Assembler
+
+-----Assembler
+
+Traduz o código Assembly em código de máquina (de mnemônicos para binário).
+
+-----ISA (Instruction Set Architecture)
+
+Conjunto de instruções que um processador pode entender e executar.
+
+O código Assembly é escrito com sintaxe e instruções definidas pela ISA.
+
+Cada ISA tem seu conjunto de instruções e sintaxe correspondente em Assembly.
+
+----------Vantagens de codar em Assembly:
+
+-----Controle preciso;
+
+-----Entendimento profundo;
+
+-----Otimização do código;
+
+----------Desvantagens de codar em Assembly:
+
+-----Complexidade;
+
+-----Falta de portabilidade;
+
+-----Manutenção e Depuração.

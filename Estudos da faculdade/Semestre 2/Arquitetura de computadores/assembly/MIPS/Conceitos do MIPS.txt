@@ -1,0 +1,23 @@
+----------Quantidade de registradores;
+
+-----32 registradores são utilizados para números flutuantes (r0 a r31);
+
+-----32 registradores para inteiros;
+
+-----e 32 registradores para double.
+
+----------Operações de soma e subtração;
+
+-----Ao fazer ADD ou SUB, são dados 3 valores de registradores:
+
+O primeiro registrador que aparece da esquerda para a direita, é o registrador no qual será registrado o resultado da conta;
+O segundo registrador seria o primeiro valor que passará pela soma/subtração;
+O terceiro registrador seria o segundo valor que passará pela soma/subtração com o primeiro valor;
+
+-----LOAD
+
+Carrega o valor de um registrador;
+
+-----STORE
+
+Armazena um valor no registrador;

@@ -8,7 +8,7 @@ public class Pessoa {
     private String dataNasc;
     private double altura;
 
-    public void constructor(String nome, String dataNasc, double altura){
+    public Pessoa(String nome, String dataNasc, double altura){
 
         this.nome = nome;
         this.dataNasc = dataNasc;
@@ -59,6 +59,13 @@ public class Pessoa {
         LocalDate data = LocalDate.parse(this.dataNasc, formatador);
 
         return ChronoUnit.YEARS.between(data, LocalDate.now());
+
+    }
+
+    @Override
+    public String toString() {
+
+        return "NOME: " + this.nome + ", DIA NASCIMENTO: " + this.dataNasc + ", ALTURA: " + this.altura;
 
     }
 
