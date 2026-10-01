@@ -1,4 +1,4 @@
-# Programa 10 - Verifica se é par ou ímpar
+# Programa 11 - Verifica se é par ou ímpar
     .data
     # Área para declaração de variáveis
     SolicitaNum: .asciiz "Digite um número: "

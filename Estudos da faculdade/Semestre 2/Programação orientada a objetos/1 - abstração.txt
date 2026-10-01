@@ -1,4 +1,4 @@
----------------Introdução à Programação Orientada a Objetos
+---------------Abstração
 
 ----------O que são objetos?
 
@@ -24,18 +24,6 @@ Feito para ser executado quando um objeto é instanciado.
 
 Feito para ser executado quando um objeto é eliminado.
 
----------------Encapsulamento
+----------Afinal, o que é a abstração?
 
------Uma forma de proteger os atributos e métodos da classe, são usados modificadores de acesso:
-
------public:
-
-Pode ser acessado de qualquer lugar;
-
------private:
-
-Permite acesso apenas à própria classe onde o atributo ou método foi definido;
-
------protected:
-
-O acesso é permitido apenas dentro de classes ou subclasses do pacote.
+É justamente a criação de classes com atributos e métodos, utilizadas para instanciar objetos e resolucionar problemas.

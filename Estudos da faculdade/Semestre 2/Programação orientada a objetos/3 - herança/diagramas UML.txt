@@ -1,0 +1,19 @@
+---------------Diagramas de classe
+
+-----UML (Unified Modeling Language)
+
+Linguagem visual (não é de programação) utilizada para desenvolver o modelo de uma aplicação antes do seu desenvolvimento, assim como uma planta de uma casa. É essencial para times de projetos comunicarem as necessidades de um software a ser desenvolvido.
+
+-----Diagramas UML
+
+Estrutural:
+- Diagrama de Classes
+- Diagrama de Objetos
+- Diagrama de Caso de Uso
+- Diagrama de Componentes
+
+Dinâmica:
+- Diagrama de Estados
+- Diagrama de Atividades
+- Diagrama de Colaboração
+- Diagrama de Sequência

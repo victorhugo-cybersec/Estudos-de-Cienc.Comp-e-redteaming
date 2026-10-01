@@ -1,4 +1,4 @@
-#Programa 7 - Operações aritméticas do tipo float - Parte 1
+#Programa 6 - Operações aritméticas do tipo float - Parte 1
 
 .data
 

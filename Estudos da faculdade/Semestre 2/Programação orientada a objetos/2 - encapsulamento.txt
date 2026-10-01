@@ -1,0 +1,19 @@
+---------------Encapsulamento
+
+-----Uma forma de proteger os atributos e métodos da classe, são usados modificadores de acesso:
+
+-----public:
+
+Pode ser acessado de qualquer lugar;
+
+-----private:
+
+Permite acesso apenas à própria classe onde o atributo ou método foi definido;
+
+-----protected:
+
+O acesso é permitido apenas dentro de classes ou subclasses do pacote.
+
+-----default:
+
+O acesso é permitido apenas pelas classes que estão no mesmo pacote (pasta). Caso a classe esteja no pacote pai, ela não terá acesso, ou seja, somente na mesma pasta. O default é definido como padrão ao não escrever um modificador de acesso para um atributo de classe.

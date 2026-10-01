@@ -1,4 +1,4 @@
-# Programa 4 - Solicita e imprime um número inteiro
+# Programa 8 - Solicita e imprime um número inteiro
 
 .data
 SolicitaNum: .asciiz "Digite um número inteiro OU MORRA: "

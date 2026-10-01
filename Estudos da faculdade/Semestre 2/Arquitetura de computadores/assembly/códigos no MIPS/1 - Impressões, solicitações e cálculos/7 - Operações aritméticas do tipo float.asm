@@ -1,4 +1,4 @@
-#Programa 8 - Operações aritméticas do tipo float - Parte 2
+#Programa 7 - Operações aritméticas do tipo float - Parte 2
 
 #Solicitar 2 números, realizar operações aritméticas e exibir os resultados
 

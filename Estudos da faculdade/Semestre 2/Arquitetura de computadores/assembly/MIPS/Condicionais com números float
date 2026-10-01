@@ -1,0 +1,15 @@
+1. Fornecer as condições
+    c.eq.s $f1, $f2 # se $f1 = $f2
+    c.lt.s $f1, $f2 # se $f1 < $f2
+    c.le.s $f1, $f2 # se $f1 <= $f2
+2. Verifica se a condição foi ou não atendida
+    bc1t label1 # Se a condição for atendida (true), executar a label1
+    bc1f label2 # Se a condição não for atendida (false), executar a label2 Obs1: as
+    labels (rótulos) são funções e podem receber qualquer nome.
+    Obs2: bc1t # Branch on Coprocessor 1 True (executa no coprocessador 1 se verdadeiro)
+    bc1f # Branch on Coprocessor 1 False (executa no coprocessador 1 se falso)
+3. Criação das labels
+    label1: # Criação da label1
+    Instruções
+    label2: # Criação da label2
+    Instruções

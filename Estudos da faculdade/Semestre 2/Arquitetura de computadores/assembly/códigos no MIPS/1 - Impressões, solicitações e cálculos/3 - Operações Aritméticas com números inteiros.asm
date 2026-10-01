@@ -1,4 +1,4 @@
-#Programa 4 - Operações Aritméticas com números inteiros - Parte 1
+#Programa 3 - Operações Aritméticas com números inteiros - Parte 1
 
 # Atribuir números diretamente nos registradores
 li $t0, 5

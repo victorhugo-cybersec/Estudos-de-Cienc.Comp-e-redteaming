@@ -1,4 +1,4 @@
-# Programa 9 - Verifica se o número é Positivo, Negativo ou igual a zero
+# Programa 10 - Verifica se o número é Positivo, Negativo ou igual a zero
 .data
 
 	SolicitaNum: .asciiz "Digite um número: "
