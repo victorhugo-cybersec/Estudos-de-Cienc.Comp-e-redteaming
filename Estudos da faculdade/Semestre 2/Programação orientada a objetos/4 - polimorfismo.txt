@@ -1,0 +1,9 @@
+---------------Polimorfismo
+
+O polimorfismo se resume a permitir a escrita de um mesmo método mais de uma vez, onde cada método de nome igual pode ter parâmetros diferentes.
+
+- Sobrecarga (Overload)
+(Mesma classe) (parâmetros diferentes)
+
+- Sobrescrita (Override/Overwrite)
+(Classe filha) (uso de this/super)

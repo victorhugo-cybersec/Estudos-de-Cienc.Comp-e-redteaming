@@ -1,7 +1,0 @@
----------------Arquitetura da Internet
-
-----------Como que um host acessa a Internet?
-
-Primeiramente, os dados do Personal Computer (PC) são transformados em dados análogos pelo modem, e enviados às linhas telefônicas, que então são enviadas para um Ponto de Presença (PoP, distribuído por uma ISP (Internet Service Provider)), fazendo a ponte para um backbone, e quanto mais perto o PoP estiver, melhor a eficiência do acesso à internet. Caso o host tenha pacotes com destino à um host que está por dentro da ISP, então, o pacote não passará pelo backbone, e irá ser direcionado diretamente ao host por meio do ISP (Logicamente mais rápido do que ter que passar pelo backbone).
-
-Grupos de servidores da web geralmente são diretamente conectados aos backbones, quem opera os backbones incentiva essa prática por meio de aluguél de espaço nos "hotéis de concessionárias", ou bastidores (racks) de equipamentos na mesma sala do roteador, para mais eficiência.

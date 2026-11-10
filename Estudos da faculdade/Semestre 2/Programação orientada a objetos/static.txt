@@ -1,0 +1,3 @@
+-----Para que serve o static?
+
+ao declarar um atributo como static numa classe, quando alguém atribuísse um valor à esse atributo, o atributo seria modificado em todos os objetos instanciados. Ao atribuir static para um método, é possível chamar o método sem instanciar um objeto da classe na qual ele está.

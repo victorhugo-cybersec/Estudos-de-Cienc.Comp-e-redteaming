@@ -1,0 +1,3 @@
+---------------Classes abstratas
+
+Classes abstratas são, de forma resumida, conceitos, que não podem ser instanciados, somente herdados. Métodos abstratos dentro de uma classe abstrata devem ser declarados na classe herdeira concreta para se tornarem concretos e utilizáveis, os métodos abstratos ao se tornarem concretos numa classe concreta, devem ter seu código escrito a fim de adaptar o método para a classe na qual ele está. Uma classe abstrata também pode herdar de outra classe abstrata, e métodos abstratos na classe abstrata pai, continuarão abstratos na classe abstrata filho.

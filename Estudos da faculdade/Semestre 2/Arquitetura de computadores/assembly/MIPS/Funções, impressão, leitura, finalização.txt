@@ -6,6 +6,6 @@ li $v0, 4: Impressão de caracteres (char) e strings
 li $v0, 5: Leitura de números do tipo inteiro
 li $v0, 6: Leitura de números do tipo float
 li $v0, 7: Leitura de números do tipo double
-li $v0, 9: Leitura de caracteres (char) e strings
+li $v0, 8: Leitura de caracteres (char) e strings
 
 li $v0, 10: Finalização do programa

@@ -41,3 +41,28 @@ Cada ISA tem seu conjunto de instruções e sintaxe correspondente em Assembly.
 -----Falta de portabilidade;
 
 -----Manutenção e Depuração.
+
+----------Macros
+
+São conjuntos de instruções e funções, e são declarados em .data e em .text (pelo menos no caso do MIPS)
+
+Em .data:
+- Ocupa mais espaço na RAM
+- O código-fonte(.text) é menor
+
+Em .text:
+- Economiza espaço na RAM
+- Código-fonte maior
+
+-----Como se cria uma macro?
+
+Em MIPS:
+
+.macro nome
+    instruções
+.end_macro
+
+-----Como chamar macros?
+
+.text
+    nome

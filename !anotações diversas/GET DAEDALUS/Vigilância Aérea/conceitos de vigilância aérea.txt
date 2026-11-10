@@ -1,0 +1,21 @@
+---------- Vídeo: Conhecendo o CNS/ATM (3/4): Vigilância Aérea;
+
+----- Vigilância não cooperativa (Radar primário):
+
+Vigilância sem consentimento de uma aeronave;
+
+----- Vigilância não dependente cooperativa (Radar secundário):
+
+Vigilância de aeronave com consentimento onde a aeronave transmite dados do voo como gasolina, altitude, fluxo do vento, etc;
+
+----- Vigilância dependente cooperativa:
+
+Vigilância com consentimento onde há a comunicação entre a aeronave e os órgãos de controle, a fim de definir rotas, fazer desvios, etc.
+
+----- ADS-B (Vigilância Dependente Automática ou Automatic Dependence Surveillance - Broadcast):
+
+Comunicação de uma aeronave para outra aeronave, ou satélite (ou de satélites para radares secundários), ou radares secundários, a fim de compartilhar posição e etc, com consentimento. O ADS-B não é exigido nas aeronaves brasileiras, mas é exigido em aeronaves comerciais, dos quais possuem o ADS-B in e o ADS-B out.
+
+----- ADS-C (Vigilância Dependente Automática por contrato ou Automatic Dependence Surveillance - Contract):
+
+Focado na comunicação entre aeronaves e órgãos de controle.

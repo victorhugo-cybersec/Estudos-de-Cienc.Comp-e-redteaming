@@ -46,8 +46,16 @@ Tem 3, 4 ou 5 associações, ou seja, as associações podem variar numa finidad
 
 -----Agregação
 
-É uma associação especial, que representa uma associação necessária para uma classe, então sem uma classe, a outra não funcionará, e não necessariamente vice-versa. Ela sempre terá obrigatoriamente 1 no início de sua multiplicidade: 1..*, 1..1, 3..10, etc.
+É uma associação especial, que representa uma associação necessária para uma classe, então sem uma classe, a outra não funcionará apropriadamente, mas continuará existindo. Ela sempre terá obrigatoriamente 1 no início de sua multiplicidade: 1..*, 1..1, 5..10, etc.
 
 -----Composição
 
-É uma variação de uma agregação, representa um vínculo mais forte entre os objetos-todo e objetos-parte. Ele tenta mostrar que os objetos-parte têm que pertencer exclusivamente a um único objeto-todo.
+É uma variação de uma agregação, representa um vínculo mais forte entre os objetos-todo e objetos-parte. Ele tenta mostrar que os objetos-parte têm que pertencer exclusivamente a um único objeto-todo. Se o objeto-todo sumir, todos os objetos-parte somem, mas se um objeto-parte sumir, o objeto-todo continua existindo.
+
+-----Especialização/Generalização
+
+Especialização se trata de uma classe que herda de uma classe geral, e generalização se trata de uma classe geral que tem várias classes coletando seus atributos e métodos a elas.
+
+-----Herança múltipla
+
+Uma propriedade que o Java não tem, mas que pode ser feito com interfaces. Herança múltipla se trata de uma classe herdar mais de uma classe simultaneamente.

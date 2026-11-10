@@ -1,3 +1,0 @@
----------------Internet Exchange Points
-
-Internet Exchange Points (IXPs, são as NAPs atuais (Network Access Points)) são feitos entre ISPs concorrentes, conhecidos como pares privados, a fim de facilitar a conexão entre roteadores de empresas rivais caso um pacote vindo de um backbone precise ir para outro backbone rival.

@@ -1,0 +1,32 @@
+---------------Redes Aéreas
+
+----------Principais redes aéreas:
+
+-----LPWAN
+
+-----Blockchain
+
+-----Meshtatic
+
+---------------Redes de UAVs
+
+----------Principais redes de UAVs:
+
+-----FANET
+
+---Problemas a serem resolvidos:
+
+-Rotas de informação;
+
+-Comunicação com o operador;
+
+-Localização e navegação (satelital/estelar);
+
+-Colisões com obstáculos, e outros UAVs;
+
+-Trajetórias lineares e não lineares;
+
+-Voos nivelados e não nivelados;
+
+-Trajetórias curvas (Ex: filtro de Kalmann).
+

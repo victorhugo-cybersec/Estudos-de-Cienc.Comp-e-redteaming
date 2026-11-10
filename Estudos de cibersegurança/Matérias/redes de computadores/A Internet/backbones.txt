@@ -1,4 +1,0 @@
----------------Backbones
-
-Fisicamente são cabos de fibra óptica extremamente eficientes, e roteadores de ponta.
-Conceitualmente, são caminhos pelos quais são transportadas informações vindas de servidores grandes como imagens, vídeos, texto e etc, que compoem a Internet.

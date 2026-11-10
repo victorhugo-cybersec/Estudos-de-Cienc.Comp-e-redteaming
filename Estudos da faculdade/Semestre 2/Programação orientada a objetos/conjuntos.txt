@@ -1,0 +1,53 @@
+-----Para que serve os conjuntos?
+
+Os conjuntos (como HashSet) são similares às listas. Porém, os conjuntos são utilizados quando precisamos de elementos restritivamente diferentes uns dos outros.
+
+-----Como faço um foreach para um conjunto?
+
+Em Java, para uma lista, seria assim:
+
+for (int i = 0; i < lista.size(); i++){
+
+    para se referir ao item:
+    lista.get(i);
+
+}
+
+Mas para um conjunto, o for é assim:
+
+for(Object item : conjunto){
+
+    para se referir ao item:
+    item;
+
+}
+
+Para uma lista, esse método acima também funciona.
+
+-----Para adquirir os métodos nativos de uma String por exemplo, ao percorrer o foreach, devemos fazer uma variável com o tipo desejado e atribuir ao item do conjunto:
+
+for(Object item : conjunto){
+
+    String nome = (String) item;
+    para se referir ao item:
+    item;
+    usando toUpperCase():
+    nome.toUpperCase()
+
+}
+
+Também é possível facilitar o processo limitando a coleção a um tipo de variável.
+
+ArrayList<String> lista = new ArrayList();
+
+e na hora do loop:
+
+Em um caso que esteja sendo utilizada uma lista, é possível fazer isso:
+for(String item : conjunto){
+
+    para se referir ao item:
+    item;
+    usando toUpperCase():
+    item.toUpperCase()
+
+}

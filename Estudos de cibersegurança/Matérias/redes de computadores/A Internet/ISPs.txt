@@ -1,3 +1,0 @@
----------------ISPs
-
-Provedores de internet (Internet Service Providers (ISPs)) são responsáveis por oferecer a possibilidade de usuários individuais terem acesso à internet.

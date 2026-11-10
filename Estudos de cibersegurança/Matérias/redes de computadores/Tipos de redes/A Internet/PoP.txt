@@ -1,0 +1,3 @@
+---------------Ponto de Presença (PoP)
+
+É um lugar físico com equipamentos de rede utilizados para conectar usuários e redes à Internet/provedor específico. Os PoPs são distribuídos pelas ISPs, quando os pacotes chegam das linhas telefônicas até uma PoP, os dados deixam de ser análogos e viram digitais.
